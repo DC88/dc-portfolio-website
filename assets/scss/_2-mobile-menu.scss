@@ -73,18 +73,21 @@
 
   li {
     position: relative;
-    padding: 20px 0;
-    padding-left: 24px;
+    padding: 0; // Rimosso il padding dal li per farlo gestire interamente al tag <a>
     border-bottom: 1px solid rgba($color-primary, 0.2);
     display: flex;
     align-items: center;
 
     a {
+      display:block;
       font-size: 18px;
       text-decoration: none;
       color: $text-primary;
       font-weight: 400;
-      padding-left: 16px;
+      width: 100%; // Occupa l'intera larghezza della riga
+      display: flex;
+      align-items: center;
+      padding: 20px 0 20px 40px; // Padding spostato qui per estendere l'area di tap
     }
 
     &.active {
