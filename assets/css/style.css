@@ -2214,8 +2214,13 @@ h3 .section-title-competenze {
   padding: 24px;
 }
 
-.to-be-conntinued {
-  width: 10%;
+.to-be-conntinued{
+  width:10%;
+  @media screen and (max-width: 768px) {
+  .to-be-conntinued {
+   width: 25%;
+  }
+}
 }
 
 /* ==========================================
