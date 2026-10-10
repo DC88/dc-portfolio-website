@@ -1,0 +1,98 @@
+/* ==========================================
+   4. SEZIONE HERO (Grid Figma: 12 Colonne)
+   ========================================== */
+.home-page{
+  overflow: hidden;
+}
+   .hero-section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+  padding: 0 80px;
+  align-items: stretch;
+  flex: 1;
+  min-height: calc(100vh - 170px);
+
+  .hero-content {
+    grid-column: span 7;
+    padding-top: clamp(24px, 5vh, 64px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    animation: slideDownHero 0.8s cubic-bezier(0.26, 1, 0.3, 1) forwards;
+
+    h1 {
+      font-family: $font-mono;
+      font-size: clamp(55px, 3.2vw, 64px);
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: -1.5px;
+      color: $text-primary;
+      margin: 0;
+    }
+  }
+
+  .hero-image {
+    grid-column: span 5;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    overflow: hidden;
+    animation: slideUpHero 1s cubic-bezier(0.35, 1, 0.3, 1) forwards;
+
+    img {
+      width: auto;
+      height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+      object-position: bottom right;
+      display: block;
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px){
+
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    height: auto;
+    min-height: 0;
+    padding: 24px 36px 0 48px;
+
+    .hero-content {
+      grid-column: auto;
+      padding-top: 0;
+      flex-shrink: 0;
+
+      h1 {
+        font-size: 36px;
+        line-height: 1.25;
+        letter-spacing: -1px;
+        margin: 0;
+        min-height: 180px; 
+      }
+    }
+  } 
+
+  .hero-image {
+    grid-column: span 4;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 10px;
+    min-height: 0;
+
+    img {
+      height: 100%;
+      max-width: 90%;
+      width: auto;
+      object-fit: contain;
+    }
+  }
+}

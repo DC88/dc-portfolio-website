@@ -1,0 +1,122 @@
+/* ==========================================
+   5. ANIMAZIONE RUOLO
+   ========================================== */
+   
+ /* Animazione testo che scende dall'alto */
+@keyframes slideDownHero {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animazione immagine che sale dal basso */
+@keyframes slideUpHero {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-role {
+  display: inline-block;
+  font-weight: 900;
+  color: $color-accent;
+  animation: pulseRole 3s infinite ease-in-out;
+  transition: opacity 0.1s ease, transform 0.5s ease;
+}
+
+/* ==========================================
+   6. ANIMAZIONE SEZIONE CONTATTI (Nuova)
+   ========================================== */
+.contact-page-section .project-row{
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), 
+              transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+
+  &.is-active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================
+   6. ANIMAZIONI RIGHE PROGETTI & CONTENUTI
+   ========================================== */
+
+/* Stato Iniziale: la riga intera e i suoi elementi interni sono nascosti */
+.project-row,
+.projects-row,
+.reveal-section,
+.reveal-left,
+.reveal-right,
+.reveal-item {
+  opacity: 0;
+  transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), 
+              transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: opacity, transform;
+  
+}
+
+/* Direzione iniziale degli elementi su Mobile e Desktop */
+@media screen and (max-width: 991.98px) {
+  .project-row,
+  .projects-row,
+  .reveal-section,
+  .reveal-left,
+  .reveal-right,
+  .reveal-item {
+    transform: translateY(30px); // Su mobile salgono dal basso
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .project-row,
+  .projects-row,
+  .reveal-section,
+  .reveal-item {
+    transform: translateY(30px);
+  }
+
+  .reveal-left {
+    transform: translateX(-30px); // Entra da sinistra
+  }
+
+  .reveal-right {
+    transform: translateX(30px); // Entra da destra
+    transition-delay: 0.15s;     
+  }
+}
+
+/* ==========================================
+   STATO ATTIVO (Innescato dal JS via .is-active o .is-visible)
+   ========================================== */
+.is-active,
+.is-visible {
+
+  &.project-row,
+  &.projects-row,
+  &.reveal-section,
+  &.reveal-left,
+  &.reveal-right,
+  &.reveal-item {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+  }
+
+  .reveal-left,
+  .reveal-right,
+  .reveal-item {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+  }
+}

@@ -1,0 +1,59 @@
+/* ==========================================
+  PROGETTI POSTERS
+   ========================================== */
+
+/* --- STILI SEZIONE DETTAGLIO PROGETTO --- */
+
+.fw-bold{
+  font-size:larger
+}
+
+.info-block{
+  margin-bottom:5rem !important;
+}
+
+.project-detail-section {
+  .site-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Padding ridotto su Mobile */
+    padding-left: 1.25rem;  /* 20px */
+    padding-right: 1.25rem; /* 20px */
+
+    /* Padding maggiorato per Desktop */
+    @media (min-width: 992px) {
+      padding-left: 5rem;  /* 80px */
+      padding-right: 5rem; /* 80px */
+    }
+  }
+.col-sticky-parent {
+    align-self: stretch;
+  }
+  /* Colonna Sticky a Sinistra (solo Desktop) */
+  @media (min-width: 992px) {
+    .project-info-sticky {
+     position: -webkit-sticky;
+      position: sticky;
+      top: 120px; /* Regola questo valore in base all'altezza dell'header fisso */
+      height: auto;
+      z-index: 10;
+      display: block;
+    }
+  }
+
+.info-icon{
+  padding-bottom: 20px;
+}
+
+}
+
+ @media (min-width: 768px) {
+.site-container {
+   
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+ }

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progetti>Fotografie</title>
+  <meta name="description" content="Portfolio professionale di Davide Cutrone">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon-dc.ico">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Davide Cutrone | UX/UI Designer & Test Manager">
+  <meta property="og:description" content="Esplora i progetti UX/UI e il percorso professionale di Davide Cutrone.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="#">
+  <meta property="og:image" content="#">
+  <meta property="og:site_name" content="Davide Cutrone Portfolio">
+  <meta property="og:locale" content="it_IT">
+
+  <!-- Foglio di stile principale (SCSS compilato in CSS) -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="site-container">
+
+      <div class="header-content">
+
+        <!-- Logo -->
+        <a class="logo-brand" href="index.html">
+          <img src="assets/icons/logo.svg" alt="Logo Davide Cutrone">
+        </a>
+
+        <!-- Tasto Burger per mobile -->
+        <label for="menu-toggle" class="burger-btn" aria-label="Apri menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <!-- Navigazione Desktop -->
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="progetti.html" class="active">Progetti</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
+          </ul>
+        </nav>
+
+      </div> <!-- Chiusura header-content -->
+
+      <!-- CHECKBOX SPOSTATO QUI (Sullo stesso livello di mobile-menu-overlay) -->
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+      <!-- Menu Mobile Overlay -->
+      <div class="mobile-menu-overlay">
+        <div class="mobile-menu-header">
+          <label for="menu-toggle" class="close-btn" aria-label="Chiudi menu">
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <nav class="mobile-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li class="active"><span class="active-indicator"></span><a href="progetti.html">Progetti</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
+          </ul>
+        </nav>
+
+        <div class="mobile-menu-footer">
+          <div class="footer-left">
+            <a href="https://www.linkedin.com/in/davide-cutrone" target="_blank" rel="noopener" class="social-link">
+              <img class="linkedin-icon-mobile" src="assets/icons/icon-linkedin.svg" alt="LinkedIn">
+            </a>
+            <span>+39 333 98 23 234</span>
+            <a href="mailto:dav.cutrone@gmail.com">dav.cutrone@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <main class="site-main">
+
+    <!-- I MIEI PROGETTI - TITLE -->
+    <section class="about-hero projects-hero">
+
+
+      <div class="container-fluid p-0">
+        <!-- Link Torna ai Progetti -->
+        <div class="mb-4">
+          <a href="progetti.html" class="btn-secondary-custom">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            <span>Torna ai progetti</span>
+          </a>
+        </div>
+        <!-- Titolo Sezione -->
+        <h2 class="section-title">Fotografie</h2>
+        <h4 class="section-subtitle">Quando posso, scatto, sperimento e manipolo immagini per esplorare nuove direzioni
+          visive.</h4>
+
+        <!-- Griglia Bootstrap 5: Row centrata con gap reattivo -->
+        <div class="row align-items-center justify-content-center g-4 g-lg-5">
+
+
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="page-title-divider-wrapper-large">
+      <div class="site-container">
+        <div class="divider-h"></div>
+      </div>
+    </div>
+    <!-- I MIEI PROGETTI - TITLE fine-->
+
+
+    <!-- BENTO GALLERY COMPLETA (38 FOTO) -->
+    <section class="bento-gallery-section py-4">
+      <div class="bento-container">
+        <div class="row g-3">
+
+          <!-- RIGA 1 (12 col: 4 + 4 + 4) -->
+          <div class="col-6 col-lg-4">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/fiocchi-neve.webp" alt="Fiocchi Neve" loading="lazy">
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/Bosco_3.webp" alt="Bosco 3" loading="lazy">
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/fulmine_1.webp" alt="Fulmine 1" loading="lazy">
+            </div>
+          </div>
+
+          <!-- RIGA 2 (12 col: 3 + 3 + 6) -->
+          <div class="col-6 col-lg-3">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/traghetto.webp" alt="Traghetto" loading="lazy">
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/Scorcio.webp" alt="Scorcio" loading="lazy">
+            </div>
+          </div>
+          <div class="col-6 col-lg-6">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/roseto.webp" alt="Roseto" loading="lazy">
+            </div>
+          </div>
+
+          <!-- RIGA 3 (12 col: 6 + 3 + 3) -->
+          <div class="col-6 col-lg-6">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/scorcio-paese.webp" alt="Scorcio Paese" loading="lazy">
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="bento-item pos-top">
+              <img src="assets/img/fotografie/fulmine_2.webp" alt="Fulmine 2" loading="lazy">
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/bosco_4.webp" alt="Bosco 4" loading="lazy">
+            </div>
+          </div>
+
+          <!-- RIGA 4 (12 col: 4 + 4 + 4) -->
+          <div class="col-6 col-lg-4">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/sirio.webp" alt="Sirio" loading="lazy">
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/ponte.webp" alt="Ponte" loading="lazy">
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/scorcio-4.webp" alt="Scorcio 4" loading="lazy">
+            </div>
+          </div>
+
+          <!-- RIGA 5 (12 col: 3 + 6 + 3) -->
+          <div class="col-6 col-lg-3">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/riflessi-persone.webp" alt="Riflessi Persone" loading="lazy">
+            </div>
+          </div>
+          <div class="col-6 col-lg-6">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/panni-terrazzo.webp" alt="Panni Terrazzo" loading="lazy">
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/market.webp" alt="Market" loading="lazy">
+            </div>
+          </div>
+
+          <!-- RIGA 6 (12 col: 4 + 4 + 4) -->
+          <div class="col-6 col-lg-4">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/tetti.webp" alt="Tetti" loading="lazy">
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/tetti-2.webp" alt="Tetti 2" loading="lazy">
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/scorcio_.webp" alt="Scorcio 2" loading="lazy">
+            </div>
+          </div>
+
+          <!-- RIGA 7 (12 col: 6 + 3 + 3) -->
+          <div class="col-6 col-lg-6">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/mexican-fiesta.webp" alt="Mexican Fiesta" loading="lazy">
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/ragazza-che-guarda.webp" alt="Ragazza che guarda" loading="lazy">
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/piazza.webp" alt="Piazza" loading="lazy">
+            </div>
+          </div>
+
+          <!-- RIGA 8 (12 col: 3 + 3 + 6) -->
+          <div class="col-6 col-lg-3">
+            <div class="bento-item pos-bottom">
+              <img src="assets/img/fotografie/scorcio-persona.webp" alt="Scorcio Persona" loading="lazy">
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/traghetto-pano.webp" alt="Traghetto Pano" loading="lazy">
+            </div>
+          </div>
+          <div class="col-6 col-lg-6">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/scorcio-milano.webp" alt="Scorcio Milano" loading="lazy">
+            </div>
+          </div>
+
+          <!-- RIGA 9 (12 col: 4 + 4 + 4) -->
+          <div class="col-6 col-lg-4">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/Pescatore.webp" alt="Pescatore" loading="lazy">
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/panni.webp" alt="Panni" loading="lazy">
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/Vetrina.webp" alt="Vetrina" loading="lazy">
+            </div>
+          </div>
+
+          <!-- RIGA 10 (12 col: 3 + 3 + 6) -->
+          <div class="col-6 col-lg-3">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/spirale.webp" alt="Spirale" loading="lazy">
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/Bosco_2.webp" alt="Bosco 2" loading="lazy">
+            </div>
+          </div>
+          <div class="col-6 col-lg-6">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/alcatraz-time-square.webp" alt="Alcatraz Time Square" loading="lazy">
+            </div>
+          </div>
+
+          <!-- RIGA 11 (12 col: 4 + 4 + 4) -->
+          <div class="col-6 col-lg-4">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/tron.webp" alt="Tron" loading="lazy">
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/scorcio-3.webp" alt="Scorcio 3" loading="lazy">
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="bento-item pos-top">
+              <img src="assets/img/fotografie/chiostro.webp" alt="Chiostro" loading="lazy">
+            </div>
+          </div>
+
+          <!-- RIGA 12 (12 col: 6 + 3 + 3) -->
+          <div class="col-6 col-lg-6">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/concerto.webp" alt="Concerto" loading="lazy">
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/delorean.webp" alt="DeLorean" loading="lazy">
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/palme bw.webp" alt="Palme B&W" loading="lazy">
+            </div>
+          </div>
+
+          <!-- RIGA 13 (12 col: 3 + 3 + 3 + 3) -->
+          <div class="col-6 col-lg-3">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/palme.webp" alt="Palme" loading="lazy">
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="bento-item pos-bottom">
+              <img src="assets/img/fotografie/panni-2.webp" alt="Panni 2" loading="lazy">
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/Bosco_1.webp" alt="Bosco 1" loading="lazy">
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="bento-item">
+              <img src="assets/img/fotografie/cupole.webp" alt="Cupole" loading="lazy">
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+          <div class="mb-4">
+            <a href="progetti.html" class="btn-secondary-custom">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+              <span>Torna ai progetti</span>
+            </a>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <div class="page-title-divider-wrapper-large">
+      <div class="site-container">
+        <div class="divider-h"></div>
+      </div>
+    </div>
+
+
+    <!-- ABOUT PAGE -  SEZIONE PRESENTIAMOCI -->
+    <section class="contact-section">
+      <div class="site-container">
+        <div class="contact-grid-wrapper">
+
+          <!-- Titolo di sezione (occupa 4 colonne su desktop) -->
+          <h2 class="section-title-presentiamoci">Presentiamoci</h2>
+
+          <!-- Contenitore CTA (occupa le restanti colonne e centra il pulsante) -->
+          <div class="contact-cta-wrapper">
+            <a href="Contatti.html"
+              class="btn btn-editorial btn-editorial-dark d-inline-flex align-items-center justify-content-between gap-5">
+              <span>Contattami</span>
+              <span class="arrow-icon">&gt;</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+
+
+
+
+
+
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container-fluid site-container">
+      <div class="footer-row">
+
+        <!-- Contatti e Social (Sinistra) -->
+        <div class="footer-left-group">
+          <!-- Icona LinkedIn -->
+          <a href="https://www.linkedin.com/in/davide-cutrone-9b77541b6/" target="_blank" rel="noopener noreferrer"
+            class="footer-social-link" aria-label="LinkedIn">
+            <img src="assets/icons/icon-linkedin.svg" alt="LinkedIn" class="footer-linkedin-svg">
+          </a>
+
+          <span class="footer-divider"></span>
+
+          <!-- Telefono -->
+          <a href="tel:+393339823234" class="footer-link">
+            +39 333 98 23 234
+          </a>
+
+          <span class="footer-divider"></span>
+
+          <!-- Email -->
+          <a href="mailto:dav.cutrone@gmail.com" class="footer-link">
+            dav.cutrone@gmail.com
+          </a>
+        </div>
+
+        <!-- Copyright (Destra) -->
+        <div class="footer-copy">
+          &copy; 2026 Davide Cutrone
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </footer>
+  
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+
+<!-- LIGHTBOX MODAL BOOTSTRAP -->
+<div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content bg-dark border-0">
+
+      <!-- Pulsante Chiudi (X) -->
+      <div class="modal-header border-0 pb-0 position-absolute w-100 top-0 end-0 z-3 p-3">
+        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"
+          aria-label="Chiudi"></button>
+      </div>
+
+      <div class="modal-body p-0">
+        <div id="lightboxCarousel" class="carousel slide carousel-fade" data-bs-ride="false" data-bs-touch="true">
+
+          <!-- Contenitore delle foto grande (popolato via JS) -->
+          <div class="carousel-inner" id="carouselInnerContainer"></div>
+
+          <!-- Freccia Sinistra (Precedente) -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#lightboxCarousel" data-bs-slide="prev">
+            <span class="lightbox-btn">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </span>
+            <span class="visually-hidden">Precedente</span>
+          </button>
+
+          <!-- Freccia Destra (Successivo) -->
+          <button class="carousel-control-next" type="button" data-bs-target="#lightboxCarousel" data-bs-slide="next">
+            <span class="lightbox-btn">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </span>
+            <span class="visually-hidden">Successivo</span>
+          </button>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</html>

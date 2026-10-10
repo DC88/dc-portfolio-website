@@ -1,0 +1,409 @@
+/* ==========================================
+   KEYFRAMES ANIMAZIONE DIVIDER VERTICALE
+   ========================================== */
+
+@keyframes scaleVerticalDivider {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+/* ==========================================
+   STILI LISTA INFO CV
+   ========================================== */
+
+.personal-info-container {
+  margin-top: 64px;
+}
+
+.personal-info-title, 
+.esperienze-title {
+  font-family: $font-mono;
+  font-size: 24px;
+  font-weight: 600;
+  color: $text-primary;
+  margin-bottom: 64px;
+}
+
+.cv-info-list {
+  gap: 1rem;
+
+  li {
+    .cv-icon-box {
+      width: 32px;
+      height: 32px;
+      flex-shrink: 0;
+    }
+
+    .cv-icon-hero {
+      max-width: 24px;
+      max-height: 24px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+
+    .cv-info-text {
+      font-weight: 700;
+      color: $color-primary;
+    }
+
+    .cv-info-link {
+      position: relative;
+      display: inline-block;
+      font-weight: 700;
+      color: $color-primary;
+      text-decoration: none;
+      transition: color 0.25s ease-in-out;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: $color-accent-hover;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+
+      &:hover,
+      &:focus {
+        color: $color-accent-hover;
+
+        &::after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================
+   CONTAINER GLOBALE CON PADDING
+   ========================================== */
+
+.site-container {
+  width: 100%;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+
+}
+
+.certificazioni-riconoscimenti-formazione{
+  margin-top: 2rem;
+}
+
+
+/* ==========================================
+   SEZIONE ESPERIENZE LAVORATIVE
+   ========================================== */
+
+.experience-section {
+//  padding-bottom: 40px;
+
+  .section-title {
+    font-family: $font-mono;
+    font-size: 28px;
+    font-weight: 700;
+    color: $text-primary;
+    letter-spacing: -0.02em;
+    margin-bottom: 48px;
+  }
+
+ .row-esperienza {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 1.5rem;
+  row-gap: 1rem;
+  align-items: start; 
+  margin-bottom: 3rem;
+
+  /* Stato iniziale: l'intero blocco è leggermente abbassato e trasparente */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Quando l'IntersectionObserver aggiunge la classe allo scroll */
+  &.is-visible,
+  &.is-active {
+    opacity: 1;
+    transform: translateY(0);
+
+    /* Srotola la linea verticale con un piccolo ritardo (delay 0.2s) */
+    .vertical-line {
+      transform: scaleY(1);
+    }
+
+    /* Fa apparire delicatamente la linea orizzontale */
+    .divider-h {
+      opacity:1;
+    }
+  }
+
+  /* 1. TITOLO RUOLO (Riga 1 - Spana su tutte le 12 colonne) */
+  .icon-role {
+    grid-column: 1 / -1;
+    grid-row: 1;
+
+    .exp-icon {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+    }
+
+    .section-title-competenze {
+      font-family: $font-mono;
+      font-size: 22px;
+      font-weight: 600;
+      color: $text-primary;
+    }
+  }
+
+  /* 2. BLOCCO AZIENDA (Riga 2 - Col 1-4) */
+  .exp-left-block {
+    grid-column: 1 / 5;
+    grid-row: 2;
+
+    .experience-meta {
+      font-size: 15px;
+      color: $text-primary;
+
+      .company-name {
+        font-size: 16px;
+      }
+    }
+  }
+
+  /* 3. LINEA VERTICALE ANIMATA (Riga 2 - Col 5) */
+  .vertical-line {
+    grid-column: 5 / 6;
+    grid-row: 2;
+    justify-self: center;
+    align-self: stretch;
+    width: 1px;
+    min-height: 100%;
+    background-color: $text-primary;
+    display: block;
+
+    /* Punto di ancoraggio in alto per lo srotolamento verso il basso */
+    transform-origin: top center;
+    transform: scaleY(0); /* Parte da 0 e si srotola solo quando c'è .is-visible */
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s;
+  }
+
+  /* 4. BLOCCO MANSIONI (Riga 2 - Col 6-12) */
+  .exp-right-block {
+    grid-column: 6 / -1;
+    grid-row: 2;
+
+    .experience-tasks {
+      .task-item {
+        position: relative;
+        padding-left: 20px;
+        font-size: 15px;
+        line-height: 1.6;
+        color: $text-primary;
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 8px;
+          width: 6px;
+          height: 6px;
+          background-color: $color-primary;
+        }
+      }
+    }
+  }
+
+  /* 5. DIVIDER ORIZZONTALE (Riga 3 - Spana su tutte le colonne) */
+  .divider-h {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    width: 100%;
+    height: 1px;
+    background-color: $color-primary;
+    opacity: 0; /* Parte nascosto per comparire insieme allo scroll */
+    margin-top: 2rem;
+    transition:  ease-in-out 0.4s;
+  }
+}
+}
+
+
+// SKILLS SECTION
+
+
+.skill-card {
+  border: 1px solid $text-primary; // Bordo del quadrato
+  padding: 2rem 1.5rem;            // Spazio interno
+  height: 100%;                     // Altezza automatica
+  background-color: transparent;
+
+  /* Titolo dentro la Card */
+  .skill-card-title {
+    font-family: $font-mono;
+    font-size: 22px;
+    font-weight: 600;
+    color: $text-primary;
+    margin-bottom: 1.25rem;
+  }
+
+  /* Divisore orizzontale interno */
+  .divider-h {
+    width: 100%;
+    height: 1px;
+    background-color: $text-primary;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Lista delle voci */
+  .skill-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; // Spazio verticale tra una voce e l'altra
+
+    .skill-item {
+      display: flex;
+      justify-content: space-between; // Spinge il testo a sinistra e il badge a destra
+      align-items: center;
+      gap: 1rem;
+
+      .skill-name {
+        font-size: 15px;
+        font-weight: 500;
+        color: $text-primary;
+      }
+
+      /* Targhetta Livello (EXPERT, INTERMEDIATE, BASIC) */
+      .skill-badge {
+        font-family: $font-mono;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $text-primary;
+        border: 1px solid $text-primary;
+        padding: 4px 10px;
+        min-width: 110px; // Dimensione fissa così sono tutte larghe uguali
+        text-align: center;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+.ai-tool{
+  padding:24px;
+}
+
+.to-be-conntinued{
+  width:10%;
+}
+/* ==========================================
+   SEZIONE FORMAZIONE
+   ========================================== */
+
+.lista-formazione-riconoscimenti {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; // Spazio verticale costante tra ciascuna voce
+  padding-left: 0;
+
+  .item-formazione-riconoscimenti {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem; // Spazio orizzontale tra l'icona bullet e il testo
+
+    .exp-icon {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+    }
+
+    .testo-formazione {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      color: $text-primary;
+
+      strong {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 991px) {
+  .site-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .experience-section {
+    .row-esperienza {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      .exp-left-block,
+      .exp-right-block {
+        width: 100%;
+      }
+
+      .vertical-line {
+        display: none; /* Rimuove la linea verticale su mobile */
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .site-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+.vertical-line{
+  display: none;
+}
+  .experience-section {
+    .row-esperienza {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      .exp-left-block,
+      .exp-right-block {
+        width: 100%;
+      }
+
+      .vertical-line {
+        display: none; /* Rimuove la linea verticale su mobile per un layout pulito */
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .site-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

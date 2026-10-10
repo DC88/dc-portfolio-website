@@ -1,0 +1,172 @@
+// ==========================================
+// SEZIONE CONTATTI - DESKTOP & MOBILE
+// ==========================================
+.contact-page-section {
+  width: 100%;
+  padding: 48px 0;
+
+  .site-container {
+    width: calc(100% - 160px);
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .contact-page-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+    align-items: start;
+    width: 100%;
+
+    // Colonna Titolo "PARLIAMO" (occupa circa 5 colonne)
+    .contact-title-col {
+      grid-column: 1 / 6;
+
+      .page-main-title {
+        font-family: $font-mono;
+        font-size: 3.5rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        color: $text-primary;
+        margin: 0;
+        line-height: 1.1;
+      }
+    }
+.section-title {
+    font-family: 'Space Mono', monospace;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 3rem 0;
+  }
+    // Colonna Form (dalla colonna 7 alla fine, allineata a destra come da mockup)
+    .contact-form-col {
+      grid-column: 7 / -1;
+      width: 100%;
+
+      .custom-contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem; // Distanza generosa tra i campi come nel design
+
+        .form-group {
+          width: 100%;
+          position: relative;
+        }
+
+        // Stile pulito ed essenziale dei campi con linea inferiore
+        .form-control-custom {
+          width: 100%;
+          background: transparent;
+          border: none;
+          border-bottom: 1px solid $text-primary;
+          border-radius: 0;
+          padding: 0.75rem 0;
+          font-family: $font-mono;
+          font-size: 1.1rem;
+          color: $text-primary;
+          outline: none;
+          box-shadow: none;
+          transition: border-color 0.3s ease;
+
+          &::placeholder {
+            color: $text-primary;
+            opacity: 0.8;
+            font-weight: 500;
+          }
+
+          &:focus {
+            border-bottom-color: $color-primary;
+          }
+        }
+
+        .textarea-custom {
+          resize: none;
+          min-height: 50px;
+        }
+
+        // Pulsante di invio squadrato
+        .form-submit-wrapper {
+          display: flex;
+          justify-content: flex-start;
+          margin-top: 1rem;
+
+          .cta-submit-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            background-color: $text-primary;
+            color: #ffffff;
+            border: none;
+            padding: 1rem 2rem;
+            font-family: $font-mono;
+            font-size: 0.95rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+              background-color: $color-primary;
+            }
+
+            .arrow {
+              font-size: 1.1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ==========================================
+// MEDIA QUERY MOBILE (Sotto i 768px)
+// ==========================================
+@media (max-width: 768px) {
+  .contact-page-section {
+    padding: 40px 0;
+
+    .site-container {
+      width: calc(100% - 48px);
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+
+    .contact-page-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+
+      .contact-title-col {
+        grid-column: unset;
+
+        .page-main-title {
+          font-size: 2.5rem;
+        }
+      }
+
+      .contact-form-col {
+        grid-column: unset;
+        width: 100%;
+
+        .custom-contact-form {
+          gap: 2rem;
+
+          .form-submit-wrapper {
+            .cta-submit-btn {
+              width: 100%;
+              
+              display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            cursor: pointer;
+            // Se vuoi uniformare i padding con la grafica del form:
+            padding: 16px 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

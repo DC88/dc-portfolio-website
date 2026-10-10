@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi sono</title>
+  <meta name="description" content="Portfolio professionale di Davide Cutrone">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon-dc.ico">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Davide Cutrone | UX/UI Designer & Test Manager">
+  <meta property="og:description" content="Esplora i progetti UX/UI e il percorso professionale di Davide Cutrone.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="#">
+  <meta property="og:image" content="#">
+  <meta property="og:site_name" content="Davide Cutrone Portfolio">
+  <meta property="og:locale" content="it_IT">
+
+  <!-- Foglio di stile principale (SCSS compilato in CSS) -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+  <div class="site-container">
+    
+    <div class="header-content">
+      
+      <!-- Logo -->
+      <a class="logo-brand" href="index.html">
+        <img src="assets/icons/logo.svg" alt="Logo Davide Cutrone">
+      </a>
+
+      <!-- Tasto Burger per mobile -->
+      <label for="menu-toggle" class="burger-btn" aria-label="Apri menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigazione Desktop -->
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html"  class="active">About me</a></li>
+          <li><a href="progetti.html">Progetti</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </nav>
+
+    </div> <!-- Chiusura header-content -->
+
+    <!-- CHECKBOX SPOSTATO QUI (Sullo stesso livello di mobile-menu-overlay) -->
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+    <!-- Menu Mobile Overlay -->
+    <div class="mobile-menu-overlay">
+      <div class="mobile-menu-header">
+        <label for="menu-toggle" class="close-btn" aria-label="Chiudi menu">
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      
+      <nav class="mobile-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><span class="active-indicator"></span><a href="about.html">About me</a></li>
+          <li><a href="progetti.html">Progetti</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-menu-footer">
+        <div class="footer-left">
+          <a href="https://www.linkedin.com/in/davide-cutrone" target="_blank" rel="noopener" class="social-link">
+            <img class="linkedin-icon-mobile" src="assets/icons/icon-linkedin.svg" alt="LinkedIn">
+          </a>
+          <span>+39 333 98 23 234</span>
+          <a href="mailto:dav.cutrone@gmail.com">dav.cutrone@gmail.com</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+  <main class="site-main">
+
+    <!-- ABOUT PAGE -  SECTION HERO -->
+    <section class="about-hero">
+      <div class="container-fluid p-0">
+
+        <!-- Titolo Sezione -->
+        <h2 class="section-title">Chi sono</h3>
+
+        <!-- Griglia Bootstrap 5: Row centrata con gap reattivo -->
+        <div class="row align-items-center justify-content-center g-4 g-lg-5">
+
+          <!-- Colonna Sinistra: Illustrazione (12 col Mobile / 5 col Desktop) -->
+          <div class="col-12 col-md-5 d-flex justify-content-center about-hero-image">
+            <img src="assets/img/About_Copertina_dc_lineart_illustration.svg"
+              alt="Foto di Davide, di profilo sinistro, mentre osserva uno scatto dal display della fotocamera">
+          </div>
+
+          <!-- Separatore Verticale Desktop (Nascosto su Mobile, visibile da MD in poi) -->
+          <div class="col-auto d-none d-md-flex align-items-center justify-content-center">
+            <div class="about-hero-divider" aria-hidden="true"></div>
+          </div>
+
+          <!-- Separatore Orizzontale Mobile (Visibile solo su Mobile <768px) -->
+          <div class="col-12 d-block d-md-none">
+            <div class="about-hero-divider-mobile" aria-hidden="true"></div>
+          </div>
+
+          <!-- Colonna Destra: Testo (12 col Mobile / 5 col Desktop) -->
+          <div class="col-12 col-md-5 d-flex justify-content-center about-hero-content">
+            <p class="about-hero-text">
+              Test Manager e formazione da architetto. Progetto interfacce digitali rigorose e trasparenti.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ABOUT PAGE -  SECTION CTA Scarica CV Progetti -->
+    <div class="CTA-divider-wrapper">
+
+      <div class="site-container">
+        <div class="divider-h"></div>
+      </div>
+
+      <!-- Bottoni CTA allineati al margine della griglia -->
+      <div class="site-container py-3">
+        <div class="d-flex flex-wrap gap-3 align-items-center justify-content-start">
+
+          <!-- CTA 1: Scarica CV -->
+          <a href="assets/docs/CV_Davide_Cutrone_Minimal.pdf"
+            class="btn btn-editorial btn-editorial-dark d-inline-flex align-items-center justify-content-between gap-5 "
+            download>
+            <span>Scarica CV</span>
+            <svg class="cta-download" width="12" height="12" viewBox="0 0 12 12" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <!-- Freccia verso il basso -->
+              <path d="M6 1V8.5M6 8.5L2.5 5M6 8.5L9.5 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <!-- Linea orizzontale di base -->
+              <path d="M1 11H11" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" />
+            </svg>
+          </a>
+
+          <!-- CTA 2: Vai ai progetti -->
+          <a href="progetti.html"
+            class="btn btn-editorial btn-editorial-outline d-inline-flex align-items-center justify-content-between gap-5">
+            <span >Vai ai progetti</span>
+            <span class="arrow-icon">&gt;</span>
+            
+          </a>
+
+        </div>
+      </div>
+      <div class="site-container">
+        <div class="divider-h"></div>
+      </div>
+    </div>
+
+
+    <!-- ABOUT PAGE -  SECTION COMPETENZE -->
+    <section class="skills-section">
+
+     
+                <div class="site-container">
+
+                  <h3 class="section-title-competenze">Competenze</h3>
+
+                  <div class="skills-blocks-wrapper">
+
+                    <!-- BLOCCO 01 -->
+                    <article class="skill-category-block">
+
+                      <div class="vertical-line"></div>
+
+                       
+
+                      <div class="block-content">
+                        <div class="block-header">
+                          <img src="assets/icons/About_01_icon_Management Governance.svg" alt="" class="skill-icon" width="28"
+                            height="28" />
+                          <h4 class="skill-block-title">
+                            <span class="skill-number">01 /</span> Management & Governance
+                          </h4>
+                        </div>
+
+                        <div class="skills-list">
+                          <div class="skill-item">
+                            <span class="skill-name">Team Management (6-20+ risorse)</span>
+                            <span class="skill-level">Expert</span>
+                          </div>
+                          <div class="skill-item">
+                            <span class="skill-name">Client Relations & Stakeholder Management</span>
+                            <span class="skill-level">Expert</span>
+                          </div>
+                          <div class="skill-item">
+                            <span class="skill-name">Budget Control & Reporting</span>
+                            <span class="skill-level">Expert</span>
+                          </div>
+                          <div class="skill-item">
+                            <span class="skill-name">Delivery & Release Management</span>
+                            <span class="skill-level">Advanced</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="divider-h"></div>
+
+                    </article>
+                     <!-- BLOCCO 02 -->
+                    <article class="skill-category-block">
+
+                      <div class="vertical-line"></div>
+
+                       
+
+                      <div class="block-content">
+                        <div class="block-header">
+                          <img src="assets/icons/About_02_icon_Testing QA.svg" alt="" class="skill-icon" width="28"
+                            height="28" />
+                          <h4 class="skill-block-title">
+                            <span class="skill-number">02 /</span> Testing & QA
+                          </h4>
+                        </div>
+
+                        <div class="skills-list">
+                          <div class="skill-item">
+                            <span class="skill-name">Quality Assurance & Process Control</span>
+                            <span class="skill-level">Expert</span>
+                          </div>
+                          <div class="skill-item">
+                            <span class="skill-name">Bug Tracking & Defect Reporting</span>
+                            <span class="skill-level">Expert</span>
+                          </div>
+                          <div class="skill-item">
+                            <span class="skill-name">Functional & Integration Testing</span>
+                            <span class="skill-level">Expert</span>
+                          </div>
+                          
+                        </div>
+                      </div>
+
+                      <div class="divider-h"></div>
+
+                    </article>
+
+                     <!-- BLOCCO 03 -->
+                    <article class="skill-category-block">
+
+                      <div class="vertical-line"></div>
+
+                       
+
+                      <div class="block-content">
+                        <div class="block-header">
+                          <img src="assets/icons/About_03_icon_UXUI & Design.svg" alt="" class="skill-icon" width="28"
+                            height="28" />
+                          <h4 class="skill-block-title">
+                            <span class="skill-number">03 /</span> UX/UI Design
+                          </h4>
+                        </div>
+
+                        <div class="skills-list">
+                          <div class="skill-item">
+                            <span class="skill-name">Wireframing & Information Architecture</span>
+                            <span class="skill-level">Advanced</span>
+                          </div>
+                          <div class="skill-item">
+                            <span class="skill-name">Figma & Prototyping</span>
+                            <span class="skill-level">Advanced</span>
+                          </div>
+                          <div class="skill-item">
+                            <span class="skill-name">User-Centered Design & Research</span>
+                            <span class="skill-level">Advanced</span>
+                          </div>
+                          <div class="skill-item">
+                            <span class="skill-name">Design Systems & Grid Layouts</span>
+                            <span class="skill-level">Advanced</span>
+                          </div>
+                          <div class="skill-item">
+                            <span class="skill-name">Graphic Design & Visual Communication</span>
+                            <span class="skill-level">Advanced</span>
+                          </div>
+                          
+                        </div>
+                      </div>
+
+                      <div class="divider-h"></div>
+
+                    </article>
+
+                     <!-- BLOCCO 04 -->
+                    <article class="skill-category-block">
+
+                      <div class="vertical-line"></div>
+
+                       
+
+                      <div class="block-content">
+                        <div class="block-header">
+                          <img src="assets/icons/About_04_icon_FrontEnd_Dev.svg" alt="" class="skill-icon" width="28"
+                            height="28" />
+                          <h4 class="skill-block-title">
+                            <span class="skill-number">04 /</span> Frontend Development
+                          </h4>
+                        </div>
+
+                        <div class="skills-list">
+                          <div class="skill-item">
+                            <span class="skill-name">HTML & SCSS / CSS</span>
+                            <span class="skill-level">Basic</span>
+                          </div>
+                          <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-level">Basic</span>
+                          </div>
+                          <div class="skill-item">
+                            <span class="skill-name">Git & Version Control</span>
+                            <span class="skill-level">Basic</span>
+                          </div>
+                          
+                          
+                        </div>
+                      </div>
+
+                      <div class="divider-h"></div>
+
+                    </article>
+
+
+
+
+
+                    
+
+                  </div>
+
+                </div>
+    </section>
+
+
+    <!-- ABOUT PAGE -  SEZIONE PRESENTIAMOCI -->
+<section class="contact-section">
+  <div class="site-container">
+    <div class="contact-grid-wrapper">
+      
+      <!-- Titolo di sezione (occupa 4 colonne su desktop) -->
+      <h2 class="section-title-presentiamoci">Presentiamoci</h2>
+      
+      <!-- Contenitore CTA (occupa le restanti colonne e centra il pulsante) -->
+      <div class="contact-cta-wrapper">
+        <a href="Contatti.html" class="btn btn-editorial btn-editorial-dark d-inline-flex align-items-center justify-content-between gap-5">
+          <span>Contattami</span>
+          <span class="arrow-icon">&gt;</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+
+
+
+
+
+
+
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container-fluid site-container">
+      <div class="footer-row">
+
+        <!-- Contatti e Social (Sinistra) -->
+        <div class="footer-left-group">
+          <!-- Icona LinkedIn -->
+          <a href="https://www.linkedin.com/in/davide-cutrone-9b77541b6/" target="_blank" rel="noopener noreferrer"
+            class="footer-social-link" aria-label="LinkedIn">
+            <img src="assets/icons/icon-linkedin.svg" alt="LinkedIn" class="footer-linkedin-svg">
+          </a>
+
+          <span class="footer-divider"></span>
+
+          <!-- Telefono -->
+          <a href="tel:+393339823234" class="footer-link">
+            +39 333 98 23 234
+          </a>
+
+          <span class="footer-divider"></span>
+
+          <!-- Email -->
+          <a href="mailto:dav.cutrone@gmail.com" class="footer-link">
+            dav.cutrone@gmail.com
+          </a>
+        </div>
+
+        <!-- Copyright (Destra) -->
+        <div class="footer-copy">
+          &copy; 2026 Davide Cutrone
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

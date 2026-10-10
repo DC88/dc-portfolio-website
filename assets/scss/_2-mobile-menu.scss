@@ -1,0 +1,141 @@
+/* ==========================================
+   7. MENU MOBILE ( GLOBALE - Nascosto di default su Desktop )
+   ========================================== */
+   
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  right: 0; 
+  width: 78%;
+  // max-width: 300px;
+  height: 100vh;
+  background-color: $bg-primary;
+  z-index: 2000; /* Aumentato a 2000 per stare SOPRA all'header */
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
+
+  transform: translateX(100%);
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+  &.is-open {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.mobile-menu-header {
+  height: 84px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  // border-bottom: 1px solid $color-primary;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  position: relative;
+  
+  span {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $text-primary;
+    
+    &:first-child { transform: rotate(45deg); }
+    &:last-child { transform: rotate(-45deg); }
+  }
+}
+
+.mobile-nav {
+  padding-top: 8px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    position: relative;
+    padding: 20px 0;
+    padding-left: 24px;
+    border-bottom: 1px solid rgba($color-primary, 0.2);
+    display: flex;
+    align-items: center;
+
+    a {
+      font-size: 18px;
+      text-decoration: none;
+      color: $text-primary;
+      font-weight: 400;
+      padding-left: 16px;
+    }
+
+    &.active {
+      a {
+        font-weight: 700;
+      }
+
+      .active-indicator {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 8px;
+        height: 100%;
+        background-color: $color-primary;
+      } 
+    }
+  }
+}
+
+.mobile-menu-footer {
+  margin-top: auto;
+  padding: 24px 0 32px 0;
+  font-size: 14px;
+  width: 100%;
+
+  .footer-left {
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px; 
+
+    .social-link {
+     display: inline-flex;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+
+   img,
+      .linkedin-icon-mobile {
+      width: 56px;
+      height: 56px;
+    }
+
+    span, a {
+      color: $text-primary;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.4;
+      white-space: nowrap;
+    }
+  }
+}

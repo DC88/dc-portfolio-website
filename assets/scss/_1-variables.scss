@@ -1,0 +1,23 @@
+/* ==========================================
+   1. VARIABILI CROMATICHE E TIPOGRAFICHE
+   ========================================== */
+
+//  COLORI
+$bg-primary: #FCFDF9;
+$text-primary: #404040;
+$text-secondary: #737373; 
+$color-primary: #404040;
+$primary-color:#404040;
+$color-accent:#d48a11;
+$color-accent-hover:#97620c;
+
+// TYPO
+$font-main: 'Inter', sans-serif;
+$font-mono: 'Space Mono', monospace;
+
+// GERARCHIA Z-INDEX
+$z-back: -1;
+$z-normal: 1;
+$z-footer: 10;
+$z-header: 1000;
+$z-mobile-overlay: 1050;

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I miei progetti</title>
+  <meta name="description" content="Portfolio professionale di Davide Cutrone">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon-dc.ico">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Davide Cutrone | UX/UI Designer & Test Manager">
+  <meta property="og:description" content="Esplora i progetti UX/UI e il percorso professionale di Davide Cutrone.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="#">
+  <meta property="og:image" content="#">
+  <meta property="og:site_name" content="Davide Cutrone Portfolio">
+  <meta property="og:locale" content="it_IT">
+
+  <!-- Foglio di stile principale (SCSS compilato in CSS) -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+  <div class="site-container">
+    
+    <div class="header-content">
+      
+      <!-- Logo -->
+      <a class="logo-brand" href="index.html">
+        <img src="assets/icons/logo.svg" alt="Logo Davide Cutrone">
+      </a>
+
+      <!-- Tasto Burger per mobile -->
+      <label for="menu-toggle" class="burger-btn" aria-label="Apri menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigazione Desktop -->
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About me</a></li>
+          <li><a href="progetti.html"  class="active">Progetti</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </nav>
+
+    </div> <!-- Chiusura header-content -->
+
+    <!-- CHECKBOX SPOSTATO QUI (Sullo stesso livello di mobile-menu-overlay) -->
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+    <!-- Menu Mobile Overlay -->
+    <div class="mobile-menu-overlay">
+      <div class="mobile-menu-header">
+        <label for="menu-toggle" class="close-btn" aria-label="Chiudi menu">
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      
+      <nav class="mobile-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About me</a></li>
+          <li  class="active"><span class="active-indicator"></span><a href="progetti.html">Progetti</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-menu-footer">
+        <div class="footer-left">
+          <a href="https://www.linkedin.com/in/davide-cutrone" target="_blank" rel="noopener" class="social-link">
+            <img class="linkedin-icon-mobile" src="assets/icons/icon-linkedin.svg" alt="LinkedIn">
+          </a>
+          <span>+39 333 98 23 234</span>
+          <a href="mailto:dav.cutrone@gmail.com">dav.cutrone@gmail.com</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</header>
+  <main class="site-main">
+
+    
+
+    <!-- I MIEI PROGETTI - TITLE -->
+    <section class="about-hero projects-hero">
+      <div class="container-fluid p-0">
+
+        <!-- Titolo Sezione -->
+        <h2 class="section-title">I miei progetti</h2>
+
+        <!-- Griglia Bootstrap 5: Row centrata con gap reattivo -->
+        <div class="row align-items-center justify-content-center g-4 g-lg-5">
+
+
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="page-title-divider-wrapper-large">
+      <div class="site-container">
+        <div class="divider-h"></div>
+      </div>
+    </div>
+    <!-- I MIEI PROGETTI - TITLE fine-->
+
+
+
+    <!-- FOTOGRAFIE -->
+    <article class="project-item py-4 py-lg-5 project-row reveal-section">
+      <div class="site-container">
+        <div class="row align-items-start g-4 g-lg-5">
+
+          <!-- Colonna Testo (allineata perfettamente a sinistra) -->
+          <div class="col-12 col-lg-4 project-info-col">
+            <h3 class="project-title mb-3">Fotografie</h3>
+            <ul class="project-tags list-unstyled mb-4">
+              <li>PHOTO EDITING</li>
+              <li>PHOTOGRAPHY</li>
+            </ul>
+            <a href="progetti-fotografie.html"
+              class="btn btn-editorial btn-editorial-outline d-inline-flex align-items-center justify-content-between gap-5">
+              <span>Guarda le fotografie</span>
+              <span class="cta-arrow">&gt;</span>
+            </a>
+          </div>
+
+          <!-- Colonna Immagine -->
+          <div class="col-12 col-lg-8">
+            <a href="progetti-fotografie.html" class="project-image-link d-block">
+              <img src="assets/img/fotografie/palme.webp" alt="palme-california-mood-turchese"
+                class="img-fluid project-img">
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </article>
+    <!-- Divider -->
+    <div class="page-title-divider-wrapper-large">
+      <div class="site-container">
+        <div class="divider-h"></div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- POSTERS-->
+    <article class="project-item py-4 py-lg-5 project-row reveal-section">
+      <div class="site-container">
+        <div class="row align-items-start g-4 g-lg-5">
+
+          <!-- Colonna Testo (allineata perfettamente a sinistra) -->
+          <div class="col-12 col-lg-4 project-info-col">
+            <h3 class="project-title mb-3">Posters</h3>
+            <ul class="project-tags list-unstyled mb-4">
+              <li>GRAPHIC DESIGN</li>
+            </ul>
+            <a href="progetti-posters.html"
+              class="btn btn-editorial btn-editorial-outline d-inline-flex align-items-center justify-content-between gap-5">
+              <span>Guarda i posters</span>
+              <span class="cta-arrow">&gt;</span>
+            </a>
+          </div>
+
+          <!-- Colonna Immagine -->
+          <div class="col-12 col-lg-8">
+            <a href="progetti-posters.html" class="project-image-link d-block">
+              <img src="assets/img/posters/FLW2.webp" alt="palme-california-mood-turchese" class="img-fluid project-img">
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </article>
+    <!-- Divider -->
+    <div class="page-title-divider-wrapper-large">
+      <div class="site-container">
+        <div class="divider-h"></div>
+      </div>
+    </div>
+
+    <!-- UXUI -->
+    <article class="project-item py-4 py-lg-5 project-row reveal-section">
+      <div class="site-container">
+        <div class="row align-items-start g-4 g-lg-5">
+
+          <!-- Colonna Testo (allineata perfettamente a sinistra) -->
+          <div class="col-12 col-lg-4 project-info-col">
+            <h3 class="project-title mb-3">Design website per casa vacanze</h3>
+            <ul class="project-tags list-unstyled mb-4">
+              <li>UX/UI</li>
+              <li>DESIGN</li>
+              <li>BRANDING</li>
+            </ul>
+            <a href="progetti-uxui.html"
+              class="btn btn-editorial btn-editorial-outline d-inline-flex align-items-center justify-content-between gap-5">
+              <span>Guarda il progetto</span>
+              <span class="cta-arrow">&gt;</span>
+            </a>
+          </div>
+
+          <!-- Colonna Immagine -->
+          <div class="col-12 col-lg-8">
+            <a href="progetti-uxui.html" class="project-image-link d-block">
+              <img src="assets/img/uxui/SPL_cards.webp" alt="palme-california-mood-turchese" class="img-fluid project-img">
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </article>
+    <!-- Divider -->
+    <div class="page-title-divider-wrapper-large">
+      <div class="site-container">
+        <div class="divider-h"></div>
+      </div>
+    </div>
+
+
+
+    <!-- 3d-rendering -->
+    <article class="project-item py-4 py-lg-5 project-row reveal-section">
+      <div class="site-container">
+        <div class="row align-items-start g-4 g-lg-5">
+
+          <!-- Colonna Testo (allineata perfettamente a sinistra) -->
+          <div class="col-12 col-lg-4 project-info-col">
+            <h3 class="project-title mb-3">3D Rendering</h3>
+            <ul class="project-tags list-unstyled mb-4">
+              <li>3D MODELING</li>
+              <li>RENDERING</li>
+              <li>PHOTO EDITING</li>
+            </ul>
+            <a href="progetti-3d.html"
+              class="btn btn-editorial btn-editorial-outline d-inline-flex align-items-center justify-content-between gap-5">
+              <span>Guarda il progetto</span>
+              <span class="cta-arrow">&gt;</span>
+            </a>
+          </div>
+
+          <!-- Colonna Immagine -->
+          <div class="col-12 col-lg-8">
+            <a href="progetti-3d.html" class="project-image-link d-block">
+              <img src="assets/img/trooper/web-trooper_7.webp" alt="palme-california-mood-turchese" class="img-fluid project-img">
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </article>
+    <!-- Divider -->
+    <div class="page-title-divider-wrapper-large">
+      <div class="site-container">
+        <div class="divider-h"></div>
+      </div>
+    </div>
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ABOUT PAGE -  SEZIONE PRESENTIAMOCI -->
+    <section class="contact-section">
+      <div class="site-container">
+        <div class="contact-grid-wrapper">
+
+          <!-- Titolo di sezione (occupa 4 colonne su desktop) -->
+          <h2 class="section-title-presentiamoci">Presentiamoci</h2>
+
+          <!-- Contenitore CTA (occupa le restanti colonne e centra il pulsante) -->
+          <div class="contact-cta-wrapper">
+            <a href="Contatti.html"
+              class="btn btn-editorial btn-editorial-dark d-inline-flex align-items-center justify-content-between gap-5">
+              <span>Contattami</span>
+              <span class="arrow-icon">&gt;</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+
+
+
+
+
+
+
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container-fluid site-container">
+      <div class="footer-row">
+
+        <!-- Contatti e Social (Sinistra) -->
+        <div class="footer-left-group">
+          <!-- Icona LinkedIn -->
+          <a href="https://www.linkedin.com/in/davide-cutrone-9b77541b6/" target="_blank" rel="noopener noreferrer"
+            class="footer-social-link" aria-label="LinkedIn">
+            <img src="assets/icons/icon-linkedin.svg" alt="LinkedIn" class="footer-linkedin-svg">
+          </a>
+
+          <span class="footer-divider"></span>
+
+          <!-- Telefono -->
+          <a href="tel:+393339823234" class="footer-link">
+            +39 333 98 23 234
+          </a>
+
+          <span class="footer-divider"></span>
+
+          <!-- Email -->
+          <a href="mailto:dav.cutrone@gmail.com" class="footer-link">
+            dav.cutrone@gmail.com
+          </a>
+        </div>
+
+        <!-- Copyright (Destra) -->
+        <div class="footer-copy">
+          &copy; 2026 Davide Cutrone
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progetti>UX/UI</title>
+  <meta name="description" content="Portfolio professionale di Davide Cutrone">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon-dc.ico">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Davide Cutrone | UX/UI Designer & Test Manager">
+  <meta property="og:description" content="Esplora i progetti UX/UI e il percorso professionale di Davide Cutrone.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="#">
+  <meta property="og:image" content="#">
+  <meta property="og:site_name" content="Davide Cutrone Portfolio">
+  <meta property="og:locale" content="it_IT">
+
+  <!-- Foglio di stile principale (SCSS compilato in CSS) -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="site-container">
+
+      <div class="header-content">
+
+        <!-- Logo -->
+        <a class="logo-brand" href="index.html">
+          <img src="assets/icons/logo.svg" alt="Logo Davide Cutrone">
+        </a>
+
+        <!-- Tasto Burger per mobile -->
+        <label for="menu-toggle" class="burger-btn" aria-label="Apri menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <!-- Navigazione Desktop -->
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="progetti.html" class="active">Progetti</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
+          </ul>
+        </nav>
+
+      </div> <!-- Chiusura header-content -->
+
+      <!-- CHECKBOX SPOSTATO QUI (Sullo stesso livello di mobile-menu-overlay) -->
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+      <!-- Menu Mobile Overlay -->
+      <div class="mobile-menu-overlay">
+        <div class="mobile-menu-header">
+          <label for="menu-toggle" class="close-btn" aria-label="Chiudi menu">
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <nav class="mobile-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li class="active"><span class="active-indicator"></span><a href="progetti.html">Progetti</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
+          </ul>
+        </nav>
+
+        <div class="mobile-menu-footer">
+          <div class="footer-left">
+            <a href="https://www.linkedin.com/in/davide-cutrone" target="_blank" rel="noopener" class="social-link">
+              <img class="linkedin-icon-mobile" src="assets/icons/icon-linkedin.svg" alt="LinkedIn">
+            </a>
+            <span>+39 333 98 23 234</span>
+            <a href="mailto:dav.cutrone@gmail.com">dav.cutrone@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <main class="site-main">
+
+    <!-- I MIEI PROGETTI - TITLE -->
+    <section class="about-hero projects-hero">
+
+
+      <div class="container-fluid p-0">
+        <!-- Link Torna ai Progetti -->
+        <div class="mb-4">
+          <a href="progetti.html" class="btn-secondary-custom">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            <span>Torna ai progetti</span>
+          </a>
+        </div>
+        <!-- Titolo Sezione -->
+        <h2 class="section-title">3D Lego Troopers</h2>
+        <h4 class="section-subtitle">Modellazione 3D e rendering: un progetto personale di visualizzazione e texturing.</h4>
+
+        <!-- Griglia Bootstrap 5: Row centrata con gap reattivo -->
+        <div class="row align-items-center justify-content-center g-4 g-lg-5">
+
+
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="page-title-divider-wrapper-large">
+      <div class="site-container">
+        <div class="divider-h"></div>
+      </div>
+    </div>
+    <!-- I MIEI PROGETTI - TITLE fine-->
+
+
+   <!-- SEZIONE DETTAGLIO POSTERS (LAYOUT 5 - 1 - 6) -->
+<section class="project-detail-section py-4 py-lg-5">
+  <div class="site-container project-container">
+    <div class="row gy-5 gx-lg-4 align-items-start">
+
+      <!-- SEZIONE 1: 5 COLONNE (Richiesta, Soluzione, Risultato) -->
+      <div class="col-12 col-lg-5 col-sticky-parent">
+        <div class="project-info-sticky pe-lg-3">
+
+          <!-- Blocco 1: Richiesta -->
+          <div class="info-block mb-4 mb-lg-5">
+            <div class="info-icon mb-2">
+              <img class="icon-richiesta  " src="assets/icons/icon-richiesta.svg" alt="icona con cerchi concentrici">
+                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </div>
+            <h3 class="h5 fw-bold mb-2">Richiesta</h3>
+            <p class="text-muted small">
+Ho voluto mettermi alla prova con un progetto personale di modellazione 3D e rendering, unendo la mia passione per il design a un'icona pop intramontabile come i LEGO Star Wars. La sfida principale era ricreare fedelmente le proporzioni e le superfici tipiche dei mattoncini e dei caschi degli Stormtrooper, gestendo con cura la complessità delle geometrie.          </div>
+
+          <!-- Blocco 2: Soluzione -->
+          <div class="info-block mb-4 mb-lg-5">
+            <div class="info-icon mb-2">
+              <img class="icon-soluzione" src="assets/icons/icon-soluzione.svg" alt="icona con cerchi allineati">
+                <rect x="3" y="3" width="7" height="7"/>
+                <rect x="14" y="3" width="7" height="7"/>
+                <rect x="14" y="14" width="7" height="7"/>
+                <rect x="3" y="14" width="7" height="7"/>
+              </svg>
+            </div>
+            <h3 class="h5 fw-bold mb-2">Soluzione</h3>
+            <p class="text-muted small">
+Per sviluppare il progetto ho utilizzato 3ds Max e Vray, curando ogni fase della pipeline: dalla creazione del wireframe poligonale fino allo studio dei materiali e dell'illuminazione. Ho lavorato sul bilanciamento delle luci e dei riflessi per conferire ai soggetti un aspetto plastico ma realistico, rifinendo poi l'impatto visivo finale in post-produzione con Photoshop.          </div>
+
+          <!-- Blocco 3: Risultato -->
+          <div class="info-block">
+            <div class="info-icon mb-2">
+              <img class="icon-risultato" src="assets/icons/icon-risultato.svg" alt="icona con cerchi allineati">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <h3 class="h5 fw-bold mb-2">Risultato</h3>
+            <p class="text-muted small">
+Il risultato è un set di rendering puliti e dettagliati che mettono in risalto la precisione della modellazione e il passaggio evolutivo dal wireframe al rendering finale texturizzato. Un esercizio di visualizzazione 3D che unisce rigore tecnico e ricerca estetica in un unico flusso di lavoro.          </div>
+
+        </div>
+      </div>
+
+      <!-- SEZIONE 2: 1 COLONNA (Divider Verticale Animato) -->
+      <div class="col-12 col-lg-1 d-none d-lg-flex justify-content-center align-self-stretch about-hero-divider ">
+        
+        <div class="about-hero-divider" aria-hidden="true"></div>
+        </div>
+      
+
+      <!-- SEZIONE 3: 6 COLONNE (Immagini Poster Incolonnate) -->
+      <div class="col-12 col-lg-6">
+        <div class="poster-gallery-stack d-flex flex-column gap-4 gap-lg-5">
+
+          <!-- Poster 1 -->
+          <div class="poster-card rounded-3 overflow-hidden">
+            <img src="assets/img/trooper/3d-troopers.webp" alt="rendering sequence per lego trooper" class="img-fluid w-100" loading="lazy">
+          </div>
+
+          
+
+         </div>
+
+        <!-- Pulsante Torna ai Progetti in Fondo -->
+        <div class="mt-5 pt-3 text-start">
+          <a href="progetti.html" class="btn-secondary-custom">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            <span>Torna ai progetti</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <div class="page-title-divider-wrapper-large">
+      <div class="site-container">
+        <div class="divider-h"></div>
+      </div>
+    </div>
+
+
+    <!-- ABOUT PAGE -  SEZIONE PRESENTIAMOCI -->
+    <section class="contact-section">
+      <div class="site-container">
+        <div class="contact-grid-wrapper">
+
+          <!-- Titolo di sezione (occupa 4 colonne su desktop) -->
+          <h2 class="section-title-presentiamoci">Presentiamoci</h2>
+
+          <!-- Contenitore CTA (occupa le restanti colonne e centra il pulsante) -->
+          <div class="contact-cta-wrapper">
+            <a href="Contatti.html"
+              class="btn btn-editorial btn-editorial-dark d-inline-flex align-items-center justify-content-between gap-5">
+              <span>Contattami</span>
+              <span class="arrow-icon">&gt;</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+
+
+
+
+
+
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container-fluid site-container">
+      <div class="footer-row">
+
+        <!-- Contatti e Social (Sinistra) -->
+        <div class="footer-left-group">
+          <!-- Icona LinkedIn -->
+          <a href="https://www.linkedin.com/in/davide-cutrone-9b77541b6/" target="_blank" rel="noopener noreferrer"
+            class="footer-social-link" aria-label="LinkedIn">
+            <img src="assets/icons/icon-linkedin.svg" alt="LinkedIn" class="footer-linkedin-svg">
+          </a>
+
+          <span class="footer-divider"></span>
+
+          <!-- Telefono -->
+          <a href="tel:+393339823234" class="footer-link">
+            +39 333 98 23 234
+          </a>
+
+          <span class="footer-divider"></span>
+
+          <!-- Email -->
+          <a href="mailto:dav.cutrone@gmail.com" class="footer-link">
+            dav.cutrone@gmail.com
+          </a>
+        </div>
+
+        <!-- Copyright (Destra) -->
+        <div class="footer-copy">
+          &copy; 2026 Davide Cutrone
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </footer>
+  
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+
+<!-- LIGHTBOX MODAL BOOTSTRAP -->
+<div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content bg-dark border-0">
+
+      <!-- Pulsante Chiudi (X) -->
+      <div class="modal-header border-0 pb-0 position-absolute w-100 top-0 end-0 z-3 p-3">
+        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"
+          aria-label="Chiudi"></button>
+      </div>
+
+      <div class="modal-body p-0">
+        <div id="lightboxCarousel" class="carousel slide carousel-fade" data-bs-ride="false" data-bs-touch="true">
+
+          <!-- Contenitore delle foto grande (popolato via JS) -->
+          <div class="carousel-inner" id="carouselInnerContainer"></div>
+
+          <!-- Freccia Sinistra (Precedente) -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#lightboxCarousel" data-bs-slide="prev">
+            <span class="lightbox-btn">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </span>
+            <span class="visually-hidden">Precedente</span>
+          </button>
+
+          <!-- Freccia Destra (Successivo) -->
+          <button class="carousel-control-next" type="button" data-bs-target="#lightboxCarousel" data-bs-slide="next">
+            <span class="lightbox-btn">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </span>
+            <span class="visually-hidden">Successivo</span>
+          </button>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</html>
