@@ -116,7 +116,7 @@
 
   .section-title {
     font-family: $font-mono;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 700;
     color: $text-primary;
     letter-spacing: -0.02em;
@@ -167,7 +167,7 @@
 
     .section-title-competenze {
       font-family: $font-mono;
-      font-size: 22px;
+      font-size: 24px;
       font-weight: 600;
       color: $text-primary;
     }
@@ -179,7 +179,7 @@
     grid-row: 2;
 
     .experience-meta {
-      font-size: 15px;
+      font-size: 16px;
       color: $text-primary;
 
       .company-name {
@@ -214,7 +214,7 @@
       .task-item {
         position: relative;
         padding-left: 20px;
-        font-size: 15px;
+        font-size: 16px;
         line-height: 1.6;
         color: $text-primary;
 
@@ -258,7 +258,7 @@
   /* Titolo dentro la Card */
   .skill-card-title {
     font-family: $font-mono;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 600;
     color: $text-primary;
     margin-bottom: 1.25rem;
@@ -285,7 +285,7 @@
       gap: 1rem;
 
       .skill-name {
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 500;
         color: $text-primary;
       }
@@ -293,14 +293,14 @@
       /* Targhetta Livello (EXPERT, INTERMEDIATE, BASIC) */
       .skill-badge {
         font-family: $font-mono;
-        font-size: 11px;
+        font-size: 14px;
         font-weight: 700;
         letter-spacing: 0.05em;
         text-transform: uppercase;
         color: $text-primary;
         border: 1px solid $text-primary;
         padding: 4px 10px;
-        min-width: 110px; // Dimensione fissa così sono tutte larghe uguali
+        min-width: 140px; // Dimensione fissa così sono tutte larghe uguali
         text-align: center;
         white-space: nowrap;
       }
@@ -344,7 +344,7 @@
     }
 
     .testo-formazione {
-      font-size: 0.95rem;
+      font-size: 16px;
       line-height: 1.4;
       color: $text-primary;
 

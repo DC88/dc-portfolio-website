@@ -251,7 +251,9 @@ main {
   backdrop-filter: blur(8px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
-
+.site-header {
+  /* Il container eredita la larghezza massima e il centraggio da _1-base.scss */
+}
 .site-header .site-container {
   width: calc(100% - 160px);
   margin-left: 80px;
@@ -332,7 +334,9 @@ main {
   font-weight: 700;
   color: #404040;
 }
-
+.desktop-nav ul li {
+  /* Linea nera attiva ancorata perfettamente al li */
+}
 .desktop-nav ul li:has(a.active)::after {
   content: "";
   position: absolute;
@@ -384,7 +388,7 @@ main {
   top: 0;
   right: 0;
   width: 78%;
-  height: 100vh;
+  height: 100dvh;
   background-color: #FCFDF9;
   z-index: 1050;
   display: flex;
@@ -514,7 +518,7 @@ main {
   top: 0;
   right: 0;
   width: 78%;
-  height: 100vh;
+  height: 100dvh;
   background-color: #FCFDF9;
   z-index: 2000; /* Aumentato a 2000 per stare SOPRA all'header */
   display: flex;
@@ -577,18 +581,21 @@ main {
 }
 .mobile-nav li {
   position: relative;
-  padding: 20px 0;
-  padding-left: 24px;
+  padding: 0;
   border-bottom: 1px solid rgba(64, 64, 64, 0.2);
   display: flex;
   align-items: center;
 }
 .mobile-nav li a {
+  display: block;
   font-size: 18px;
   text-decoration: none;
   color: #404040;
   font-weight: 400;
-  padding-left: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px 0 20px 40px;
 }
 .mobile-nav li.active a {
   font-weight: 700;
@@ -680,7 +687,9 @@ main {
     gap: 12px;
   }
 }
-
+.site-footer {
+  /* Gruppo contatti a sinistra */
+}
 .site-footer .footer-left-group {
   display: flex;
   align-items: center;
@@ -693,7 +702,9 @@ main {
     gap: 10px;
   }
 }
-
+.site-footer {
+  /* Link e Testi */
+}
 .site-footer .footer-link,
 .site-footer .footer-social-link {
   color: #404040;
@@ -719,7 +730,9 @@ main {
   font-size: 12px;
   font-weight: 400;
 }
-
+.site-footer {
+  /* Link social */
+}
 .site-footer .footer-social-link {
   display: inline-flex;
   align-items: center;
@@ -738,14 +751,23 @@ main {
   opacity: 0.8;
   border-color: #404040;
 }
-
+.site-footer {
+  /* Divisore verticale tra i contatti */
+}
 .site-footer .footer-divider {
   width: 1px;
   height: 24px;
   background-color: #404040;
   flex-shrink: 0;
 }
-
+@media screen and (max-width: 768px) {
+  .site-footer .footer-divider {
+    /* Opzionale: se su mobile molto stretti vuoi nascondere i divisori verticali per pulizia, puoi metterci display: none; altrimenti restano */
+  }
+}
+.site-footer {
+  /* Testo Copyright */
+}
 .site-footer .footer-copy {
   white-space: nowrap;
   text-align: right;
@@ -915,7 +937,9 @@ main {
   margin-bottom: 24px;
   line-height: 1.3;
 }
-
+.about-hero {
+  /* 1. IMMAGINE */
+}
 .about-hero .about-hero-image img {
   width: 100%;
   max-width: 380px;
@@ -924,7 +948,9 @@ main {
   will-change: clip-path;
   animation: revealImageFromBottom 1.1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
-
+.about-hero {
+  /* 2. DIVIDER VERTICALE (DESKTOP) */
+}
 .about-hero .about-hero-divider {
   width: 1px;
   height: 220px;
@@ -933,7 +959,9 @@ main {
   will-change: clip-path;
   animation: revealDividerFromTop 1s cubic-bezier(0.25, 1, 0.5, 1) 0.3s both;
 }
-
+.about-hero {
+  /* DIVIDER ORIZZONTALE (MOBILE) */
+}
 .about-hero .about-hero-divider-mobile {
   width: 80%;
   height: 1px;
@@ -943,7 +971,9 @@ main {
   will-change: clip-path;
   animation: revealdividerfromleft 1s cubic-bezier(0.25, 1, 0.5, 1) 0.3s both;
 }
-
+.about-hero {
+  /* 3. TESTO HERO */
+}
 .about-hero .about-hero-content .about-hero-text {
   font-family: "Space Mono", monospace;
   font-size: 28px;
@@ -1049,7 +1079,9 @@ main {
   margin: 0;
   color: #404040;
 }
-
+.contact-section .contact-grid-wrapper {
+  /* Contenitore CTA che occupa le restanti colonne ed è centrato al suo interno */
+}
 .contact-section .contact-grid-wrapper .contact-cta-wrapper {
   grid-column: 5/-1;
   display: flex;
@@ -1141,7 +1173,9 @@ main {
   will-change: clip-path;
   animation: revealDividerFromTop 1s cubic-bezier(0.25, 1, 0.5, 1) 0.3s both;
 }
-
+.skills-section .skill-category-block {
+  /* Linea verticale (posizionata esattamente tra la colonna 4 e 5) */
+}
 .skills-section .skill-category-block .vertical-line {
   grid-column: 5/6;
   width: 1px;
@@ -1149,7 +1183,9 @@ main {
   background-color: #404040;
   flex-shrink: 0;
 }
-
+.skills-section .skill-category-block {
+  /* Contenuto del blocco (colonne 6-13, ovvero tutte le 8 colonne sulla destra) */
+}
 .skills-section .skill-category-block .block-content {
   grid-column: 6/-1;
   display: grid;
@@ -1175,7 +1211,9 @@ main {
   color: #404040;
   font-weight: 400;
 }
-
+.skills-section .skill-category-block .block-content {
+  /* Lista competenze (rientrata correttamente dentro .block-content) */
+}
 .skills-section .skill-category-block .block-content .skills-list {
   grid-column: 3/-1;
   display: flex;
@@ -1203,14 +1241,19 @@ main {
   white-space: nowrap;
   margin-left: auto;
 }
-
+.skills-section .skill-category-block {
+  /* /.block-content */
+  /* Divider orizzontale di chiusura blocco */
+}
 .skills-section .skill-category-block .divider-h {
   grid-column: 1/-1;
   width: 100%;
   height: 1px;
   background-color: #404040;
 }
-
+.skills-section {
+  /* /.skill-category-block */
+} /* /.skills-section */
 @media (max-width: 968px) {
   .skills-section {
     padding: 30px 0;
@@ -1931,7 +1974,9 @@ h3 .section-title-competenze {
 .project-detail-section .col-sticky-parent {
   align-self: stretch;
 }
-
+.project-detail-section {
+  /* Colonna Sticky a Sinistra (solo Desktop) */
+}
 @media (min-width: 992px) {
   .project-detail-section .project-info-sticky {
     position: -webkit-sticky;
@@ -2050,7 +2095,7 @@ h3 .section-title-competenze {
    ========================================== */
 .experience-section .section-title {
   font-family: "Space Mono", monospace;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 700;
   color: #404040;
   letter-spacing: -0.02em;
@@ -2077,11 +2122,15 @@ h3 .section-title-competenze {
 .experience-section .row-esperienza.is-visible .vertical-line, .experience-section .row-esperienza.is-active .vertical-line {
   transform: scaleY(1);
 }
-
+.experience-section .row-esperienza.is-visible, .experience-section .row-esperienza.is-active {
+  /* Fa apparire delicatamente la linea orizzontale */
+}
 .experience-section .row-esperienza.is-visible .divider-h, .experience-section .row-esperienza.is-active .divider-h {
   opacity: 1;
 }
-
+.experience-section .row-esperienza {
+  /* 1. TITOLO RUOLO (Riga 1 - Spana su tutte le 12 colonne) */
+}
 .experience-section .row-esperienza .icon-role {
   grid-column: 1/-1;
   grid-row: 1;
@@ -2093,23 +2142,27 @@ h3 .section-title-competenze {
 }
 .experience-section .row-esperienza .icon-role .section-title-competenze {
   font-family: "Space Mono", monospace;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
   color: #404040;
 }
-
+.experience-section .row-esperienza {
+  /* 2. BLOCCO AZIENDA (Riga 2 - Col 1-4) */
+}
 .experience-section .row-esperienza .exp-left-block {
   grid-column: 1/5;
   grid-row: 2;
 }
 .experience-section .row-esperienza .exp-left-block .experience-meta {
-  font-size: 15px;
+  font-size: 16px;
   color: #404040;
 }
 .experience-section .row-esperienza .exp-left-block .experience-meta .company-name {
   font-size: 16px;
 }
-
+.experience-section .row-esperienza {
+  /* 3. LINEA VERTICALE ANIMATA (Riga 2 - Col 5) */
+}
 .experience-section .row-esperienza .vertical-line {
   grid-column: 5/6;
   grid-row: 2;
@@ -2124,7 +2177,9 @@ h3 .section-title-competenze {
   transform: scaleY(0); /* Parte da 0 e si srotola solo quando c'è .is-visible */
   transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s;
 }
-
+.experience-section .row-esperienza {
+  /* 4. BLOCCO MANSIONI (Riga 2 - Col 6-12) */
+}
 .experience-section .row-esperienza .exp-right-block {
   grid-column: 6/-1;
   grid-row: 2;
@@ -2132,7 +2187,7 @@ h3 .section-title-competenze {
 .experience-section .row-esperienza .exp-right-block .experience-tasks .task-item {
   position: relative;
   padding-left: 20px;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.6;
   color: #404040;
 }
@@ -2145,7 +2200,9 @@ h3 .section-title-competenze {
   height: 6px;
   background-color: #404040;
 }
-
+.experience-section .row-esperienza {
+  /* 5. DIVIDER ORIZZONTALE (Riga 3 - Spana su tutte le colonne) */
+}
 .experience-section .row-esperienza .divider-h {
   grid-column: 1/-1;
   grid-row: 3;
@@ -2166,19 +2223,23 @@ h3 .section-title-competenze {
 }
 .skill-card .skill-card-title {
   font-family: "Space Mono", monospace;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
   color: #404040;
   margin-bottom: 1.25rem;
 }
-
+.skill-card {
+  /* Divisore orizzontale interno */
+}
 .skill-card .divider-h {
   width: 100%;
   height: 1px;
   background-color: #404040;
   margin-bottom: 1.5rem;
 }
-
+.skill-card {
+  /* Lista delle voci */
+}
 .skill-card .skill-list {
   display: flex;
   flex-direction: column;
@@ -2191,21 +2252,23 @@ h3 .section-title-competenze {
   gap: 1rem;
 }
 .skill-card .skill-list .skill-item .skill-name {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   color: #404040;
 }
-
+.skill-card .skill-list .skill-item {
+  /* Targhetta Livello (EXPERT, INTERMEDIATE, BASIC) */
+}
 .skill-card .skill-list .skill-item .skill-badge {
   font-family: "Space Mono", monospace;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #404040;
   border: 1px solid #404040;
   padding: 4px 10px;
-  min-width: 110px;
+  min-width: 140px;
   text-align: center;
   white-space: nowrap;
 }
@@ -2214,13 +2277,13 @@ h3 .section-title-competenze {
   padding: 24px;
 }
 
-.to-be-conntinued{
-  width:10%;
-  @media screen and (max-width: 768px) {
-  .to-be-conntinued {
-   width: 25%;
-  }
+.to-be-conntinued {
+  width: 10%;
 }
+@media screen and (max-width: 768px) {
+  .to-be-conntinued .to-be-conntinued {
+    width: 25%;
+  }
 }
 
 /* ==========================================
@@ -2243,7 +2306,7 @@ h3 .section-title-competenze {
   object-fit: contain;
 }
 .lista-formazione-riconoscimenti .item-formazione-riconoscimenti .testo-formazione {
-  font-size: 0.95rem;
+  font-size: 16px;
   line-height: 1.4;
   color: #404040;
 }
