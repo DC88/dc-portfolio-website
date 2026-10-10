@@ -11,7 +11,7 @@
   padding: 0 80px;
   align-items: stretch;
   flex: 1;
-  min-height: calc(100vh - 210px);
+  min-height: calc(100dvh - 210px);
 
   .hero-content {
     grid-column: span 7;
