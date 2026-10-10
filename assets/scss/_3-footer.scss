@@ -66,12 +66,12 @@
   {
     color: $text-primary;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
     transition: all 0.2s ease;
 
     @media screen and (max-width: 768px) {
-      font-size: 12px; /* Ridotto a 12px su mobile per tutti */
+      font-size: 14px; /* Ridotto a 12px su mobile per tutti */
     }
 
     &:hover {
@@ -83,7 +83,7 @@
   .footer-copy {
     color: $text-secondary;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;}
 
 
