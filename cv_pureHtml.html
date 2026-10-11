@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV & Skills</title>
+  <meta name="description" content="Portfolio professionale di Davide Cutrone">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon-dc.ico">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Davide Cutrone | UX/UI Designer & Test Manager">
+  <meta property="og:description" content="Esplora i progetti UX/UI e il percorso professionale di Davide Cutrone.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="#">
+  <meta property="og:image" content="#">
+  <meta property="og:site_name" content="Davide Cutrone Portfolio">
+  <meta property="og:locale" content="it_IT">
+
+  <!-- Foglio di stile principale (SCSS compilato in CSS) -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="site-container">
+
+      <div class="header-content">
+
+        <!-- Logo -->
+        <a class="logo-brand" href="index.html">
+          <img src="assets/icons/logo.svg" alt="Logo Davide Cutrone">
+        </a>
+
+        <!-- Tasto Burger per mobile -->
+        <label for="menu-toggle" class="burger-btn" aria-label="Apri menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <!-- Navigazione Desktop -->
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="progetti.html">Progetti</a></li>
+            <li><a href="cv.html" class="active">CV</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
+          </ul>
+        </nav>
+
+      </div> <!-- Chiusura header-content -->
+
+      <!-- CHECKBOX SPOSTATO QUI (Sullo stesso livello di mobile-menu-overlay) -->
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+      <!-- Menu Mobile Overlay -->
+      <div class="mobile-menu-overlay">
+        <div class="mobile-menu-header">
+          <label for="menu-toggle" class="close-btn" aria-label="Chiudi menu">
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <nav class="mobile-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="progetti.html">Progetti</a></li>
+            <li class="active"><span class="active-indicator"></span><a href="cv.html">CV</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
+          </ul>
+        </nav>
+
+        <div class="mobile-menu-footer">
+          <div class="footer-left">
+            <a href="https://www.linkedin.com/in/davide-cutrone" target="_blank" rel="noopener" class="social-link">
+              <img class="linkedin-icon-mobile" src="assets/icons/icon-linkedin.svg" alt="LinkedIn">
+            </a>
+            <span>+39 333 98 23 234</span>
+            <a href="mailto:dav.cutrone@gmail.com">dav.cutrone@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="site-main">
+
+    <!-- ABOUT PAGE -  SECTION HERO -->
+    <section class="about-hero">
+      <div class="container-fluid p-0">
+
+        <!-- Titolo Sezione -->
+        <h2 class="section-title">CV & Skills</h2>
+        <div class="row gy-4 align-items-center justify-content-lg-center flex-column-reverse flex-lg-row">
+
+          <!-- Colonna 1: Informazioni Personali (5 colonne su Desktop grandi) -->
+          <div class="col-12 col-lg-5 col-xl-4 personal-info-container">
+            <div class="cv-info-wrapper">
+              <h2 class="personal-info-title text-uppercase fw-bold">Informazioni Personali</h2>
+
+              <ul class="cv-info-list list-unstyled d-flex flex-column mb-0">
+
+                <li class="d-flex align-items-center mb-3">
+                  <div class="cv-icon-box d-flex justify-content-center align-items-center me-4">
+                    <img class="cv-icon-hero" src="assets/icons/cv-icon-calendar.svg" alt="Icona calendario">
+                  </div>
+                  <div class="d-flex flex-wrap align-items-center gap-2">
+                    <span class="cv-info-text">28/12/1988</span>
+                  </div>
+                </li>
+
+                <li class="d-flex align-items-center mb-3">
+                  <div class="cv-icon-box d-flex justify-content-center align-items-center me-4">
+                    <img class="cv-icon-hero" src="assets/icons/cv-icon-Map-pin.svg" alt="Icona pin mappa">
+                  </div>
+                  <div class="d-flex flex-wrap align-items-center gap-2">
+                    <span class="cv-info-text">Via Riccardo Zampieri 51, 00159 Roma</span>
+                  </div>
+                </li>
+
+                <li class="d-flex align-items-center mb-3">
+                  <div class="cv-icon-box d-flex justify-content-center align-items-center me-4">
+                    <img class="cv-icon-hero" src="assets/icons/cv-icon-mail.svg" alt="Icona lettera mail">
+                  </div>
+                  <div class="d-flex flex-wrap align-items-center gap-2">
+                    <a href="mailto:dav.cutrone@gmail.com" class="cv-info-link">dav.cutrone@gmail.com</a>
+                  </div>
+                </li>
+
+                <li class="d-flex align-items-center mb-3">
+                  <div class="cv-icon-box d-flex justify-content-center align-items-center me-4">
+                    <img class="cv-icon-hero" src="assets/icons/cv-icon-phone.svg" alt="Icona smartphone">
+                  </div>
+                  <div class="d-flex flex-wrap align-items-center gap-2">
+                    <a href="tel:+393339823234" class="cv-info-link">+39 333 98 23 234</a>
+                  </div>
+                </li>
+
+
+
+                <li class="d-flex align-items-center">
+                  <div class="cv-icon-box d-flex justify-content-center align-items-center me-4">
+                    <img class="cv-icon-hero" src="assets/icons/cv-icon-linkedin.png" alt="Icona LinkedIn">
+                  </div>
+                  <div class="d-flex flex-wrap align-items-center gap-2">
+                    <a href="https://www.linkedin.com/in/davide-cutrone/" target="_blank" rel="noopener noreferrer"
+                      class="cv-info-link">Visita il profilo LinkedIn</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Spaziatore opzionale di 1 o 2 colonne per distanziarli esattamente quanto desideri -->
+          <div class="d-none d-lg-block col-lg-1 col-xl-2"></div>
+
+          <!-- Colonna 2: Immagine Hero CV (5 colonne) -->
+          <div class="col-12 col-lg-5 col-xl-4 d-flex justify-content-center justify-content-lg-start">
+            <div class="cv-hero-img-wrapper w-100 text-center text-lg-start">
+              <img src="assets/img/cv/cv-hero-image.svg" alt="Illustrazione Curriculum Vitae" class="img-fluid"
+                loading="eager">
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </section>
+
+
+
+
+    <!-- CV PAGE -  SECTION CTA Scarica CV Progetti -->
+    <div class="CTA-divider-wrapper">
+
+      <div class="site-container">
+        <div class="divider-h"></div>
+      </div>
+
+      <!-- Bottoni CTA allineati al margine della griglia -->
+      <div class="site-container py-3">
+        <div class="d-flex flex-wrap gap-3 align-items-center justify-content-start">
+
+          <!-- CTA 1: Scarica CV -->
+          <a href="assets/docs/CV_Davide_Cutrone_Minimal.pdf"
+            class="btn btn-editorial btn-editorial-dark d-inline-flex align-items-center justify-content-between gap-5 "
+            download>
+            <span>Scarica CV</span>
+            <svg class="cta-download" width="12" height="12" viewBox="0 0 12 12" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <!-- Freccia verso il basso -->
+              <path d="M6 1V8.5M6 8.5L2.5 5M6 8.5L9.5 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <!-- Linea orizzontale di base -->
+              <path d="M1 11H11" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" />
+            </svg>
+          </a>
+
+          <!-- CTA 2: Vai ai progetti -->
+          <a href="progetti.html"
+            class="btn btn-editorial btn-editorial-outline d-inline-flex align-items-center justify-content-between gap-5">
+            <span>Vai ai progetti</span>
+            <span class="arrow-icon">&gt;</span>
+
+          </a>
+
+        </div>
+      </div>
+      <div class="site-container">
+        <div class="divider-h"></div>
+      </div>
+    </div>
+
+
+
+
+
+    <section class="experience-section">
+      <div class="site-container">
+        <h2 class="section-title text-uppercase mb-5">Esperienze lavorative in sintesi</h2>
+
+        <!-- Test manager -->
+        <article class="row-esperienza experience-item">
+
+          <!-- Titolo su tutta la riga 1 -->
+          <div class="icon-role d-flex align-items-center gap-3 mb-3">
+            <img src="assets/icons/cv-icon-test-lead.svg" alt="Icona Test Manager" class="exp-icon flex-shrink-0">
+            <h3 class="section-title-competenze mb-0 lh-1 text-nowrap">Test Manager | Test Lead</h3>
+          </div>
+
+          <!-- Blocco Sinistro (Azienda) - Riga 2, Col 1-4 -->
+          <div class="exp-left-block">
+            <div class="experience-meta">
+              <p class="company-name fw-bold mb-1">Capgemini S.p.a</p>
+              <p class="experience-dates mb-1">09/2023 – Presente</p>
+              <p class="job-level text-muted mb-0">Consultant</p>
+            </div>
+          </div>
+
+          <!-- Linea Verticale - Riga 2, Col 5 (Sottile 1px e animata) -->
+          <div class="vertical-line"></div>
+
+          <!-- Blocco Destro (Mansioni) - Riga 2, Col 6-12 -->
+          <div class="exp-right-block">
+            <ul class="experience-tasks list-unstyled mb-0">
+              <li class="task-item mb-3">
+                Coordinamento di team da 6 a 20 risorse, gestione cliente e relazione con PMT di progetto.
+                Pianificazione delle attività di collaudo multi release/build.
+              </li>
+              <li class="task-item mb-3">
+                Redazione reportistica con PBI e deliverable di fatturazione secondo modello di gara d'appalto.
+              </li>
+              <li class="task-item mb-0">
+                Supervisione di test UAT, regression testing, tracciamento bug e reportistica di avanzamento.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Divider Orizzontale a fine blocco -->
+          <div class="divider-h"></div>
+
+          <!-- Linea Verticale - Riga 2, Col 5 (Sottile 1px e animata) -->
+          <div class="vertical-line"></div>
+
+
+
+
+        </article>
+        <!-- Integration Tester -->
+        <article class="row-esperienza experience-item">
+
+          <!-- Titolo su tutta la riga 1 -->
+          <div class="icon-role d-flex align-items-center gap-3 mb-3">
+            <img src="assets/icons/cv-icon-integration-tester.svg" alt="Icona integration tester"
+              class="exp-icon flex-shrink-0">
+            <h3 class="section-title-competenze mb-0 lh-1 text-nowrap">Integration Tester</h3>
+          </div>
+
+          <!-- Blocco Sinistro (Azienda) - Riga 2, Col 1-4 -->
+          <div class="exp-left-block">
+            <div class="experience-meta">
+              <p class="company-name fw-bold mb-1">Capgemini S.p.a</p>
+              <p class="experience-dates mb-1">09/2020 – 09/2023</p>
+              <p class="job-level text-muted mb-0">Consultant</p>
+            </div>
+          </div>
+
+          <!-- Linea Verticale - Riga 2, Col 5 (Sottile 1px e animata) -->
+          <div class="vertical-line"></div>
+
+          <!-- Blocco Destro (Mansioni) - Riga 2, Col 6-12 -->
+          <div class="exp-right-block">
+            <ul class="experience-tasks list-unstyled mb-0">
+              <li class="task-item mb-3">
+                Collaudo integrato e mobile testing (App Poste Italiane, comparto assicurativo e sportello) </li>
+
+            </ul>
+          </div>
+
+          <!-- Divider Orizzontale a fine blocco -->
+          <div class="divider-h"></div>
+
+          <!-- Linea Verticale - Riga 2, Col 5 (Sottile 1px e animata) -->
+          <div class="vertical-line"></div>
+
+
+
+
+        </article>
+
+        <!-- Integration Tester -->
+        <article class="row-esperienza experience-item">
+
+          <!-- Titolo su tutta la riga 1 -->
+          <div class="icon-role d-flex align-items-center gap-3 mb-3">
+            <img src="assets/icons/cv-icon-functional-tester.svg" alt="Icona Functional tester"
+              class="exp-icon flex-shrink-0">
+            <h3 class="section-title-competenze mb-0 lh-1 text-nowrap">Integration/FunctionalTester</h3>
+          </div>
+
+          <!-- Blocco Sinistro (Azienda) - Riga 2, Col 1-4 -->
+          <div class="exp-left-block">
+            <div class="experience-meta">
+              <p class="company-name fw-bold mb-1">Alten S.p.a</p>
+              <p class="experience-dates mb-1">09/2017 – 08/2020</p>
+              <p class="job-level text-muted mb-0">Intern/Apprentice</p>
+            </div>
+          </div>
+
+          <!-- Linea Verticale - Riga 2, Col 5 (Sottile 1px e animata) -->
+          <div class="vertical-line"></div>
+
+          <!-- Blocco Destro (Mansioni) - Riga 2, Col 6-12 -->
+          <div class="exp-right-block">
+            <ul class="experience-tasks list-unstyled mb-0">
+              <li class="task-item mb-3">
+                Attività di testing funzionale e integrato, stesura piani di test e gestione anomalie su progetti per
+                Poste Italiane.
+              </li>
+
+            </ul>
+          </div>
+
+          <!-- Divider Orizzontale a fine blocco -->
+          <div class="divider-h"></div>
+
+          <!-- Linea Verticale - Riga 2, Col 5 (Sottile 1px e animata) -->
+          <div class="vertical-line"></div>
+
+
+        </article>
+
+        <!-- Integration Tester -->
+        <article class="row-esperienza experience-item">
+
+          <!-- Titolo su tutta la riga 1 -->
+          <div class="icon-role d-flex align-items-center gap-3 mb-3">
+            <img src="assets/icons/cv-icon-previousExp.svg" alt="Icona Integration/FunctionalTester" class="exp-icon flex-shrink-0">
+            <h3 class="section-title-competenze mb-0 lh-1 text-nowrap">Integration/FunctionalTester</h3>
+          </div>
+
+          <!-- Blocco Sinistro (Azienda) - Riga 2, Col 1-4 -->
+          <div class="exp-left-block">
+            <div class="experience-meta">
+              <p class="company-name fw-bold mb-1">ApptoYou S.r.l. 2017 Intern 4 mesi</p>
+              <p class="experience-dates mb-1">2017 (4 mesi)</p>
+              <p class="job-level text-muted mb-0">Stage</p>
+              <p class="company-name fw-bold mb-1">Freelance 3D artist</p>
+
+            </div>
+          </div>
+
+          <!-- Linea Verticale - Riga 2, Col 5 (Sottile 1px e animata) -->
+          <div class="vertical-line"></div>
+
+          <!-- Blocco Destro (Mansioni) - Riga 2, Col 6-12 -->
+          <div class="exp-right-block">
+            <ul class="experience-tasks list-unstyled mb-0">
+              <li class="task-item mb-3">
+                Web Designer / 3D Printer
+              </li>
+              <li class="task-item mb-3">
+                Freelance 3D Artist per produzioni cinematografiche <br>Vincitore <strong>>David di Donatello per gli
+                  Effetti Visivi nel 2016</strong> per "Il racconto dei racconti" di Matteo Garrone.
+              </li>
+
+            </ul>
+          </div>
+
+          <!-- Divider Orizzontale a fine blocco -->
+          <div class="divider-h"></div>
+
+          <!-- Linea Verticale - Riga 2, Col 5 (Sottile 1px e animata) -->
+          <div class="vertical-line"></div>
+
+
+
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="experience-section">
+      <div class="site-container">
+
+        <h2 class="section-title text-uppercase mb-5">SKILLS & TECHS</h2>
+
+        <div class="row g-4">
+
+          <div class="col-12 col-md-4">
+            <div class="skill-card reveal-item">
+              <h3 class="skill-card-title">QA & Management</h3>
+              <div class="divider-h"></div>
+
+              <ul class="skill-list list-unstyled mb-0">
+                <li class="skill-item">
+                  <span class="skill-name">Test Management</span>
+                  <span class="skill-badge">EXPERT</span>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-name">Team Leading</span>
+                  <span class="skill-badge">EXPERT</span>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-name">Confluence & Jira</span>
+                  <span class="skill-badge">EXPERT</span>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-name">Microfocus Silk</span>
+                  <span class="skill-badge">EXPERT</span>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-name">Agile Methods</span>
+                  <span class="skill-badge">INTERMEDIATE</span>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-name">Postman & SoapUI</span>
+                  <span class="skill-badge">INTERMEDIATE</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="skill-card reveal-item">
+              <h3 class="skill-card-title">UX/UI & Design</h3>
+              <div class="divider-h"></div>
+
+              <ul class="skill-list list-unstyled mb-0">
+                <li class="skill-item">
+                  <span class="skill-name">Suite Adobe</span>
+                  <span class="skill-badge">EXPERT</span>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-name">Figma</span>
+                  <span class="skill-badge">EXPERT</span>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-name">3D Studio Max</span>
+                  <span class="skill-badge">INTERMEDIATE</span>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-name">Zbrush</span>
+                  <span class="skill-badge">BASIC</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="skill-card reveal-item">
+              <h3 class="skill-card-title">Web Design</h3>
+              <div class="divider-h"></div>
+
+              <ul class="skill-list list-unstyled mb-0">
+                <li class="skill-item">
+                  <span class="skill-name">HTML5 & CSS3/SCSS</span>
+                  <span class="skill-badge">BASIC</span>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-badge">BASIC</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+    </section>
+
+
+    <!-- MAIN AI TOOLS -->
+
+    <section class="experience-section">
+      <div class="site-container">
+
+
+
+        <div class="row g-4">
+
+          <div class="col-12 ">
+            <div class="skill-card reveal-item">
+              <h3 class="skill-card-title">Main AI tools</h3>
+              <div class="divider-h"></div>
+
+              <!-- row-cols-2 su mobile, row-cols-md-6 su desktop, w-100 per coprire tutta la larghezza -->
+              <ul class="list-unstyled row row-cols-2 row-cols-md-6 g-3 w-100 m-0 text-center">
+
+                <!-- Elemento 1 -->
+                <li class="col d-flex flex-column align-items-center ai-tool">
+                  <img src="assets/icons/cv-icon-midjourney.svg" alt="Icona Midjourney" class="exp-icon mb-3">
+                  <span class="skill-ai-name">Midjourney</span>
+                </li>
+
+                <!-- Elemento 2 -->
+                <li class="col d-flex flex-column align-items-center ai-tool">
+                  <img src="assets/icons/cv-icon-gemini.svg" alt="Icona Gemini" class="exp-icon mb-3">
+                  <span class="skill-ai-name">Gemini</span>
+                </li>
+
+                <!-- Elemento 3 -->
+                <li class="col d-flex flex-column align-items-center ai-tool">
+                  <img src="assets/icons/cv-icon-chatgpt.svg" alt="Icona ChatGPT" class="exp-icon mb-3">
+                  <span class="skill-ai-name">ChatGPT</span>
+                </li>
+
+                <!-- Elemento 4 -->
+                <li class="col d-flex flex-column align-items-center ai-tool">
+                  <img src="assets/icons/cv-icon-copilot.svg" alt="Icona Copilot" class="exp-icon mb-3">
+                  <span class="skill-ai-name">Copilot</span>
+                </li>
+
+                <!-- Elemento 5 -->
+                <li class="col d-flex flex-column align-items-center ai-tool">
+                  <img src="assets/icons/cv-icon-aistudio.svg" alt="Icona AI Studio" class="exp-icon mb-3">
+                  <span class="skill-ai-name">AI Studio</span>
+                </li>
+
+                <!-- Elemento 6 -->
+                <li class="col d-flex flex-column align-items-center ai-tool">
+                  <img src="assets/icons/cv-icon-stitch.svg" alt="Icona Stitch" class="exp-icon mb-3">
+                  <span class="skill-ai-name">Stitch</span>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+    </section>
+
+
+
+    <section class="experience-section">
+      <div class="site-container">
+        <h2 class="section-title text-uppercase mb-5">Formazione</h2>
+
+        <ul class="lista-formazione-riconoscimenti list-unstyled mb-0">
+
+          <!-- Item 1: In Corso -->
+          <li class="item-formazione-riconoscimenti">
+            <img src="assets/icons/cv-icon-bullet-orange.svg" alt="Icona bullet formazione in corso"
+              class="exp-icon flex-shrink-0">
+            <span class="testo-formazione">
+              <strong>Master in UX/UI Design</strong> | Start2Impact (2025–in corso)
+            </span>
+          </li>
+
+          <!-- Item 2 -->
+          <li class="item-formazione-riconoscimenti">
+            <img src="assets/icons/cv-icon-bullet-green.svg" alt="Icona bullet formazione completata"
+              class="exp-icon flex-shrink-0">
+            <span class="testo-formazione">
+              <strong>Master in Sviluppo di Applicazioni e Servizi</strong> | ELIS Corporate School (2016)
+            </span>
+          </li>
+
+          <!-- Item 3 -->
+          <li class="item-formazione-riconoscimenti">
+            <img src="assets/icons/cv-icon-bullet-green.svg" alt="Icona bullet formazione completata"
+              class="exp-icon flex-shrink-0">
+            <span class="testo-formazione">
+              <strong>Master Visual Effects</strong> | Animatika School of Visual Effects (2016)
+            </span>
+          </li>
+
+          <!-- Item 4 -->
+          <li class="item-formazione-riconoscimenti">
+            <img src="assets/icons/cv-icon-bullet-green.svg" alt="Icona bullet formazione completata"
+              class="exp-icon flex-shrink-0">
+            <span class="testo-formazione">
+              <strong>Laurea Triennale / Magistrale in Architettura - Progettazione Urbana (110/110)</strong> |
+              Università degli Studi Roma Tre (2007–2013)
+            </span>
+          </li>
+
+
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- Formazione Certificazioni Riconoscimenti -->
+    <section class="experience-section ">
+      <div class="site-container certificazioni-riconoscimenti-formazione">
+        <h2 class="section-title text-uppercase mb-5">Certificazioni & Riconoscimenti</h2>
+
+        <ul class="lista-formazione-riconoscimenti list-unstyled mb-0">
+
+          <!-- Item 1:  -->
+          <li class="item-formazione-riconoscimenti">
+            <img src="assets/icons/cv-icon-bullet-green.svg" alt="Icona bullet formazione completata"
+              class="exp-icon flex-shrink-0">
+            <span class="testo-formazione">
+              <strong>®ISTQB Foundation</strong> CTIT-18_3443
+            </span>
+          </li>
+
+          <!-- Item 2 -->
+          <li class="item-formazione-riconoscimenti">
+            <img src="assets/icons/cv-icon-bullet-green.svg" alt="Icona bullet formazione completata"
+              class="exp-icon flex-shrink-0">
+            <span class="testo-formazione">
+              <strong>EF Level 13</strong> Advanced - CEFR Level C1
+            </span>
+          </li>
+
+          <!-- Item 3 -->
+          <li class="item-formazione-riconoscimenti">
+            <img src="assets/icons/cv-icon-bullet-green.svg" alt="Icona bullet formazione completata"
+              class="exp-icon flex-shrink-0">
+            <span class="testo-formazione">
+              <strong>David di Donatello per gli effetti visivo</strong> 2016 - Il racconto dei racconti - Makinarium
+              s.r.l
+            </span>
+          </li>
+
+          <li class="item-formazione-riconoscimenti">
+            <img src="assets/icons/cv-icon-bullet-green.svg" alt="Icona bullet formazione completata"
+              class="exp-icon flex-shrink-0">
+            <span class="testo-formazione">
+              <strong>Abilitazione alla professione di architetto senior</strong> Ordine degli Architetti - Sez A
+            </span>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="site-container">
+        <div class="divider-h"></div>
+      </div>
+    </section>
+
+
+
+
+
+<section class="experience-section">
+    <div class="site-container scarica-cv py-3">
+      <div class="d-flex flex-wrap gap-3 align-items-center justify-content-center">
+        <!-- CTA 1: Scarica CV -->
+        <a href="assets/docs/CV_Davide_Cutrone_Minimal.pdf"
+          class="btn btn-editorial btn-editorial-dark d-inline-flex align-items-center justify-content-between gap-5 "
+          download>
+          <span>Scarica CV completo</span>
+          <svg class="cta-download" width="12" height="12" viewBox="0 0 12 12" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <!-- Freccia verso il basso -->
+            <path d="M6 1V8.5M6 8.5L2.5 5M6 8.5L9.5 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <!-- Linea orizzontale di base -->
+            <path d="M1 11H11" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="site-container">
+        <div class="divider-h"></div>
+      </div>
+</section>
+
+<section class="experience-section">
+  <div class="site-container scarica-cv py-3">
+    <!-- d-flex abilita Flexbox, justify-content-end spinge tutto a destra -->
+    <div class="d-flex justify-content-end">
+      <!-- CTA 1: Scarica CV -->
+
+      <img class="to-be-conntinued" src="assets/icons/icon-to-be-continued.svg" alt="to be continued di ritorno al futuro">
+    </div>
+  </div>
+
+  <div class="site-container">
+    <div class="divider-h"></div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ABOUT PAGE -  SEZIONE PRESENTIAMOCI -->
+    <section class="contact-section">
+      <div class="site-container">
+        <div class="contact-grid-wrapper">
+
+          <!-- Titolo di sezione (occupa 4 colonne su desktop) -->
+          <h2 class="section-title-presentiamoci">Presentiamoci</h2>
+
+          <!-- Contenitore CTA (occupa le restanti colonne e centra il pulsante) -->
+          <div class="contact-cta-wrapper">
+            <a href="contatti.html"
+              class="btn btn-editorial btn-editorial-dark d-inline-flex align-items-center justify-content-between gap-5">
+              <span>Contattami</span>
+              <span class="arrow-icon">&gt;</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+
+
+
+
+
+
+
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container-fluid site-container">
+      <div class="footer-row">
+
+        <!-- Contatti e Social (Sinistra) -->
+        <div class="footer-left-group">
+          <!-- Icona LinkedIn -->
+          <a href="https://www.linkedin.com/in/davide-cutrone-9b77541b6/" target="_blank" rel="noopener noreferrer"
+            class="footer-social-link" aria-label="LinkedIn">
+            <img src="assets/icons/icon-linkedin.svg" alt="LinkedIn" class="footer-linkedin-svg">
+          </a>
+
+          <span class="footer-divider"></span>
+
+          <!-- Telefono -->
+          <a href="tel:+393339823234" class="footer-link">
+            +39 333 98 23 234
+          </a>
+
+          <span class="footer-divider"></span>
+
+          <!-- Email -->
+          <a href="mailto:dav.cutrone@gmail.com" class="footer-link">
+            dav.cutrone@gmail.com
+          </a>
+        </div>
+
+        <!-- Copyright (Destra) -->
+        <div class="footer-copy">
+          &copy; 2026 Davide Cutrone
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
