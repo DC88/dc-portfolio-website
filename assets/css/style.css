@@ -808,6 +808,15 @@ main {
   justify-content: flex-start;
   animation: slideDownHero 0.8s cubic-bezier(0.26, 1, 0.3, 1) forwards;
 }
+.hero-section .hero-content .hero-intro {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-color, #333);
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  max-width: 480px;
+}
 .hero-section .hero-content h1 {
   font-family: "Space Mono", monospace;
   font-size: clamp(55px, 3.2vw, 64px);
