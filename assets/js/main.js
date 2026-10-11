@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', function () {
       event.preventDefault();
 
       // Sostituisci con il tuo Service ID e Template ID presi da EmailJS
-      emailjs.sendForm('TUO_SERVICE_ID', 'TUO_TEMPLATE_ID', this)
+      emailjs.sendForm('service_oaa8q5l', 'template_5tvtn8n', this)
         .then(function() {
             alert('Messaggio inviato con successo!');
             contactForm.reset();
