@@ -196,3 +196,21 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+document.addEventListener('DOMContentLoaded', function () {
+  const contactForm = document.getElementById('contact-form');
+  
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // Sostituisci con il tuo Service ID e Template ID presi da EmailJS
+      emailjs.sendForm('TUO_SERVICE_ID', 'TUO_TEMPLATE_ID', this)
+        .then(function() {
+            alert('Messaggio inviato con successo!');
+            contactForm.reset();
+        }, function(error) {
+            alert('Errore nell\'invio del messaggio. Riprova.', error);
+        });
+    });
+  }
+});

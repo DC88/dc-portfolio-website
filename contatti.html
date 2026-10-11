@@ -117,18 +117,18 @@
 
         <!-- Form di contatto (occupa la parte destra) -->
         <div class="contact-form-col">
-          <form class="custom-contact-form" action="#" method="POST">
+          <form  id="contact-form" class="custom-contact-form" action="#" method="POST">
 
             <div class="form-group">
-              <input type="text" class="form-control-custom" placeholder="Dimmi il tuo nome" required>
+              <input type="text" name="from_name" class="form-control-custom" placeholder="Dimmi il tuo nome" required>
             </div>
 
             <div class="form-group">
-              <input type="email" class="form-control-custom" placeholder="Ora la tua Email" required>
+              <input type="email" name="from_email" class="form-control-custom" placeholder="Ora la tua Email" required>
             </div>
 
             <div class="form-group">
-              <textarea class="form-control-custom textarea-custom" rows="3" placeholder="Scrivimi!"
+              <textarea  name="message" class="form-control-custom textarea-custom" rows="3" placeholder="Scrivimi!"
                 required></textarea>
             </div>
 
@@ -199,48 +199,20 @@
   </footer>
   <!-- FOOTER-BOOTSTRAP -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- EMAILJS SDK & INIZIALIZZAZIONE -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+     (function(){
+        emailjs.init({
+          publicKey: "VHyfVOHXGknYD7PL2", 
+        });
+     })();
+  </script>
   <script src="assets/js/main.js"></script>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
+</html>
