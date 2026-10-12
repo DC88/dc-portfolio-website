@@ -44,6 +44,11 @@
   animation: pulseRole 3s infinite ease-in-out;
   transition: opacity 0.1s ease, transform 0.5s ease;
 }
+@media screen and (max-width: 991.98px) {
+  .animated-role {
+    white-space: nowrap;
+  }
+}
 
 /* ==========================================
    6. ANIMAZIONE SEZIONE CONTATTI (Nuova)

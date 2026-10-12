@@ -38,6 +38,9 @@
   padding-right: 16px;
   animation: pulseRole 3s infinite ease-in-out;
   transition: opacity 0.1s ease, transform 0.5s ease;
+  @media screen and (max-width: 991.98px){
+    white-space: nowrap;
+  }
  
 }
 
