@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (roleElement) {
     const roles = [
-      
       "Test Manager",
       "UX/UI Designer",
       "Architetto"
@@ -24,7 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const currentRole = roles[roleIndex];
 
       if (isDeleting) {
-        roleElement.textContent = currentRole.substring(0, charIndex - 1);
+        // Quando cancella, se arriva a 0 usa uno spazio vuoto non comprimibile (&nbsp;) invece di ""
+        roleElement.textContent = currentRole.substring(0, charIndex - 1) || "\u00A0";
         charIndex--;
       } else {
         roleElement.textContent = currentRole.substring(0, charIndex + 1);

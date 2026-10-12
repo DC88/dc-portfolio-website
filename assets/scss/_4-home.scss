@@ -4,6 +4,8 @@
 .home-page{
   overflow: hidden;
 }
+
+
    .hero-section {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -29,8 +31,9 @@
     color: var(--text-color, #333);
     margin-top: 1.5rem;
     margin-bottom: 2rem;
-    max-width: 640px;
+    max-width: 820px;
   }
+  
 
     h1 {
       font-family: $font-mono;
@@ -80,7 +83,64 @@
     }
   }
 }
+.hero-featured-projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  max-width: 800px; /* Evita che si allarghino troppo su schermi ultrawide */
 
+  @media (max-width: 991.98px) {
+    grid-template-columns: 1fr; /* Su mobile e tablet vanno in colonna */
+  }
+}
+
+.hero-project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.25rem;
+  border: 1px solid #1a1a1a; /* Bordo nero pulito stile Swiss */
+  background-color: #ffffff;
+  text-decoration: none;
+  color: #1a1a1a;
+  transition: all 0.25s ease;
+
+  .card-category {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #666666;
+  }
+
+  .card-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+  }
+
+  .card-arrow {
+    align-self: flex-end;
+    font-size: 1.125rem;
+    transition: transform 0.2s ease;
+  }
+
+  &:hover {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border-color: #1a1a1a;
+
+    .card-category {
+      color: #ccc;
+    }
+
+    .card-arrow {
+      transform: translateX(4px);
+    }
+  }
+}
 
 @media screen and (max-width: 768px){
 
