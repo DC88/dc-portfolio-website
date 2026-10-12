@@ -19,6 +19,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 20px;
     animation: slideDownHero 0.8s cubic-bezier(0.26, 1, 0.3, 1) forwards;
 
     .hero-intro {
@@ -41,7 +42,25 @@
       margin: 0;
     }
   }
+.hero-bottom {
+      margin-top: 2rem;
 
+      .hero-intro {
+        font-family: $font-main;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: var(--text-color, #333);
+        margin-bottom: 1.2rem;
+        max-width: 520px;
+      }
+
+      .hero-cta-group {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+    }
   .hero-image {
     grid-column: span 5;
     height: 100%;

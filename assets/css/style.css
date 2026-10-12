@@ -806,6 +806,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-bottom: 20px;
   animation: slideDownHero 0.8s cubic-bezier(0.26, 1, 0.3, 1) forwards;
 }
 .hero-section .hero-content .hero-intro {
@@ -825,6 +826,23 @@ main {
   letter-spacing: -1.5px;
   color: #404040;
   margin: 0;
+}
+.hero-section .hero-bottom {
+  margin-top: 2rem;
+}
+.hero-section .hero-bottom .hero-intro {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-color, #333);
+  margin-bottom: 1.2rem;
+  max-width: 520px;
+}
+.hero-section .hero-bottom .hero-cta-group {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .hero-section .hero-image {
   grid-column: span 5;
