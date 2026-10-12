@@ -118,6 +118,8 @@
   }
 }
 
+
+
 // ==========================================
 // MEDIA QUERY MOBILE (Sotto i 768px)
 // ==========================================
@@ -169,3 +171,19 @@
     }
   }
 }
+
+.custom-contact-form {
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+    .form-label-custom {
+      font-family: $font-mono;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+  }}
