@@ -2531,4 +2531,10 @@ h3 .section-title-competenze {
     padding-left: 16px;
     padding-right: 16px;
   }
+}
+@media screen and (max-width: 991.98px) {
+  .experience-section .row-esperienza .icon-role .section-title-competenze {
+    white-space: normal !important; /* Permette al testo di andare a capo */
+    word-break: break-word;
+  }
 }/*# sourceMappingURL=style.css.map */
